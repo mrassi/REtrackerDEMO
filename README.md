@@ -9,15 +9,19 @@ For full product contact Rassi Engineering +9613341934 or marwan@rassi.me)
 
 2- Download and install [latest sdk from realsense](https://github.com/IntelRealSense/librealsense/releases/download/v2.42.0/Intel.RealSense.SDK-WIN10-2.42.0.2845.exe)
 
-3- run `RE_sensordetect.exe` (this will read your unique T265 serial number and will store it under `serial.txt`)
+3- clone or download Github directory
 
-4- email `serial.txt` to marwan@rassi.me or mrassi@gmail.com
+4- download tracker software `REtrackerDemo.exe` from [our google drive](https://drive.google.com/file/d/1o7sKclf3HefGPI_nrXLFrFCgQCvWPMdk/view?usp=sharing)
 
-5- after email is received, we will email back your key (place `key.txt` in the same directory)
+5- run `RE_sensordetect.exe` (this will read your unique T265 serial number and will store it under `serial.txt`)
 
-6- edit `remote_address.txt` with your aximmetry ip address (or local 127.0.0.1 if on the same PC) 
+6- email `serial.txt` to marwan@rassi.me or mrassi@gmail.com
 
-7- run `REtrackerDemo.exe`
+7- after email is received, we will email back your key (place `key.txt` in the same directory)
+
+8- edit `remote_address.txt` with your aximmetry ip address (or local 127.0.0.1 if on the same PC) 
+
+9- run `REtrackerDemo.exe`
 
 
 # Aximmetry setup
