@@ -33,3 +33,11 @@ For full product contact Rassi Engineering +9613341934 or marwan@rassi.me)
 2b- or use `./aximmetry tools/REtrackerServer.xcomp` and connect output to any camera transform node
 
 3- for advanced users: you can use `./aximmetry tools/REtracker_LensDistort_JSON.xcomp` after calibrating lense with `RE_calibrate.exe` and generating a distortion matrix JSON file (contact us for free calibration tools)
+
+# Miscellaneous
+
+1- Tested extension cable [from Amazon](https://www.amazon.com/gp/product/B07MZRB6LN)
+
+2- Download Calibration pattern (camera-calibration-checker-board_9x7.pdf)  print it and tape it to a board
+
+3- Check the 3D-printable design (mount_t265_d435.stl) for attaching the Realsense with a 1/4 inch screw
