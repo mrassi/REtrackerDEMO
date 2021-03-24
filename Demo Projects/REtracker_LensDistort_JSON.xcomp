@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AximmetryCompound version="2021.1.0">
+	<Parameters>
+		<Parameter type="FlowEditingParams" UseDefaults="True" EnableShiftSnap="True" SnapThresholdPixels="10" />
+		<Parameter type="SceneEditingParams" UseDefaults="True" HandleSize="1" SymbolSize="1" ConstantHandleSize="True" ConstantSymbolSize="True" InactiveAxises="True" HelperGeometries="True" RotationMode="0" RotateSpeed="1" TranslateSnapSize="0.1" RotateSnapSize="45" ScaleSnapSize="0.5" CameraMoverSystem="1" AllowCameraRoll="False" />
+		<Parameter type="SequenceEditingParams" UseDefaults="True" EnableShiftSnap="True" SnapThresholdPixels="10" />
+		<Parameter type="TimingParams" UseDefaults="True" Format="TimeAndFrame" FPS="30" BPM="120" BeatsPerMeasure="4" TicksPerBeat="64" BaseDate="2015-01-01T00:00:00.0000000" DateTimeFormat="yy-MM-dd HH:mm" Length="10" />
+		<Parameter type="ArrChannelParams">
+			<PreviewChannels type="dictionary" />
+		</Parameter>
+		<Parameter type="ArrEditContextParams" LastControlBoard="null">
+			<ControlBoardOrder type="list" itemType="String" />
+			<Bookmarks type="dictionary" />
+		</Parameter>
+		<Parameter type="ArrVideoParams" FrameSize="1920, 1080" PixelAspect="1:1" FrameRate="50" />
+		<Parameter type="ArrHistoryParams">
+			<Items type="list">
+				<item type="ArrHistoryItem" UserName="Reverist2 / Reverist (marioreverist)" ModifiedTime="2021-03-17T13:32:49.5678109+00:00" />
+				<item type="ArrHistoryItem" UserName="Reverist2 / Reverist (marioreverist)" ModifiedTime="2021-03-17T13:33:51.5832245+00:00" />
+			</Items>
+		</Parameter>
+		<Parameter type="InformationParams" Description="null" Tags="null">
+			<Thumbnail Data="null" />
+		</Parameter>
+		<Parameter type="MacroParams">
+			<Macros type="list" />
+		</Parameter>
+		<Parameter type="ArrRenderingParams" LinearPipeline="False" ColorSpaceConvFilter="*_nrm.*|*_norm.*|*_normal.*|*_met.*|*_rgh.*|*_rog.*|*_spec.*|*_gls.*|*_disp.*|*_aniso.*" />
+		<Parameter type="FBXModelImporterParams" ImportGeometry="True" ImportLights="False" ImportCameras="False" ImportMaterials="True" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" SimpleHitTester="False" />
+		<Parameter type="OBJModelImporterParams" FlipU="False" FlipV="True" ImportMaterials="True" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" SimpleHitTester="False">
+			<CoordSys type="ModelCoordSys" Unit="1" Up="Z" RightHanded="True" />
+		</Parameter>
+		<Parameter type="ColladaModelImporterParams" ImportGeometry="True" ImportLights="False" ImportCameras="False" ImportMaterials="True" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" BindTargetNodes="True" TargetNamePostfix=".Target" />
+		<Parameter type="FBXCameraExporterParams" BillboardRotation="False" BillboardImageSequence="False" BillboardMode="KeyedAdjusted" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="False" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="exr" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" ASCII="False" />
+		<Parameter type="FBXModelExporterParams" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="False" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="png" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" ASCII="False" />
+		<Parameter type="OBJModelExporterParams" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="False" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="png" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" FlipU="False" FlipV="True" ExportVertexColors="False">
+			<CoordSys type="ModelCoordSys" Unit="1" Up="Z" RightHanded="True" />
+		</Parameter>
+	</Parameters>
+	<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="REtracker_LensDistort_JSON" IsLocked="False">
+		<ExtraData>
+			<item key="ViewCenter" type="PointF" value="-323.3669, 157.4677" />
+			<item key="ZoomFactor" type="Single" value="0.4867522" />
+			<item key="CurveEditorLayout" type="String" value="&lt;CurveEditorLayout&gt;&#xD;&#xA;&#x9;&lt;Props&gt;&#xD;&#xA;&#x9;&#x9;&lt;StartTime&gt;-0.02&lt;/StartTime&gt;&#xD;&#xA;&#x9;&#x9;&lt;Zooming&gt;250&lt;/Zooming&gt;&#xD;&#xA;&#x9;&#x9;&lt;HeadersWidth&gt;200&lt;/HeadersWidth&gt;&#xD;&#xA;&#x9;&#x9;&lt;ScrollPos&gt;0&lt;/ScrollPos&gt;&#xD;&#xA;&#x9;&lt;/Props&gt;&#xD;&#xA;&lt;/CurveEditorLayout&gt;" />
+			<item key="Location" type="PointF" value="-1103, 76" />
+		</ExtraData>
+	</Properties>
+	<Children>
+		<Module Type="JSONFile">
+			<Properties Name="Calibration" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1120, -78" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="JSONFile" Type="PinStringValue" Value="D:\_VirtualProduction\_VirtualProduction\_Tracking\T265\REtracker-main\REtracker-main\test123.json" />
+				<Pin Name="Open" Type="PinBoolValue" Value="True" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="FY" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-898, -68" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="FY" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="TextReplace">
+			<Properties Name="Text Replace" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-737, -68" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="What" Type="PinStringValue" Value="," />
+				<Pin Name="To" Type="PinStringValue" Value="." />
+				<Pin Name="All" Type="PinBoolValue" Value="True" />
+				<Pin Name="StartIndex" Type="PinIntValue" Value="1" />
+				<Pin Name="CaseSensitive" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-547, -68" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="FX" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-897, -136" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="FX" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="CX" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-893, 0" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="CX" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="CY" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-900, 67" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="CY" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="TextReplace">
+			<Properties Name="Text Replace 2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-737, -136" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="What" Type="PinStringValue" Value="," />
+				<Pin Name="To" Type="PinStringValue" Value="." />
+				<Pin Name="All" Type="PinBoolValue" Value="True" />
+				<Pin Name="StartIndex" Type="PinIntValue" Value="1" />
+				<Pin Name="CaseSensitive" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-547, -136" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="TextReplace">
+			<Properties Name="Text Replace 3" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-737, 0" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="What" Type="PinStringValue" Value="," />
+				<Pin Name="To" Type="PinStringValue" Value="." />
+				<Pin Name="All" Type="PinBoolValue" Value="True" />
+				<Pin Name="StartIndex" Type="PinIntValue" Value="1" />
+				<Pin Name="CaseSensitive" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 3" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-547, 0" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="TextReplace">
+			<Properties Name="Text Replace 4" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-737, 67" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="What" Type="PinStringValue" Value="," />
+				<Pin Name="To" Type="PinStringValue" Value="." />
+				<Pin Name="All" Type="PinBoolValue" Value="True" />
+				<Pin Name="StartIndex" Type="PinIntValue" Value="1" />
+				<Pin Name="CaseSensitive" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 4" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-547, 67" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="Divide">
+			<Properties Name="Divide" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-134, -154" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="0.5" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Arctangent">
+			<Properties Name="Arctangent" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="14, -155" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Y" Type="PinVectorValue" Value="0" />
+				<Pin Name="X" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Multiply">
+			<Properties Name="Multiply" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="184, -154" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="2" />
+			</PinValues>
+		</Module>
+		<Module Type="Divide">
+			<Properties Name="Divide 2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-318, -74" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionInteger">
+			<Properties Name="frameWidth" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-899, -281" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="frameWidth" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinIntValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionInteger">
+			<Properties Name="frameHeight" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-905, -217" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="frameHeight" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinIntValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="Divide">
+			<Properties Name="Divide 3" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-495, -274" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Divide">
+			<Properties Name="Divide 4" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-307, -154" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Multiply">
+			<Properties Name="Multiply 2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-145, -77" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Divide">
+			<Properties Name="Divide 5" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-321, 5" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Divide">
+			<Properties Name="Divide 6" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-318, 82" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Subtract">
+			<Properties Name="Subtract" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-141, 8" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="0" />
+				<Pin Name="B" Type="PinVectorValue" Value="0.5" />
+			</PinValues>
+		</Module>
+		<Module Type="Subtract">
+			<Properties Name="Subtract 2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-146, 90" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="0" />
+				<Pin Name="B" Type="PinVectorValue" Value="0.5" />
+			</PinValues>
+		</Module>
+		<Module Type="VectorConcatMulti">
+			<Properties Name="Vector Concat Multi" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="405, -150" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Vector1" Type="PinVectorValue" Value="1" />
+				<Pin Name="Vector2" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector3" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector4" Type="PinVectorValue" Value="0" />
+				<Pin Name="Vector5" Type="PinVectorValue" Value="0" />
+				<Pin Name="Vector6" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector7" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector8" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector9" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector10" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector11" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector12" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector13" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector14" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector15" Type="PinVectorValue" Value="" />
+				<Pin Name="Vector16" Type="PinVectorValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="K1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-898, 182" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="K1" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="TextReplace">
+			<Properties Name="Text Replace 5" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-737, 182" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="What" Type="PinStringValue" Value="," />
+				<Pin Name="To" Type="PinStringValue" Value="." />
+				<Pin Name="All" Type="PinBoolValue" Value="True" />
+				<Pin Name="StartIndex" Type="PinIntValue" Value="1" />
+				<Pin Name="CaseSensitive" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 5" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-547, 182" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="K2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-896, 264" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="K2" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="TextReplace">
+			<Properties Name="Text Replace 6" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-735, 264" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="What" Type="PinStringValue" Value="," />
+				<Pin Name="To" Type="PinStringValue" Value="." />
+				<Pin Name="All" Type="PinBoolValue" Value="True" />
+				<Pin Name="StartIndex" Type="PinIntValue" Value="1" />
+				<Pin Name="CaseSensitive" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 6" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-545, 264" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+	</Children>
+	<ExposerInputPins>
+		<Pin Name="JSON File" Type="PinStringValue" SourceModule="Calibration" SourcePin="JSONFile" />
+	</ExposerInputPins>
+	<ExposerOutputPins>
+		<Pin Name="Out 1" Type="PinVectorValue" SourceModule="Vector Concat Multi" SourcePin="Out" />
+	</ExposerOutputPins>
+	<Connections>
+		<Connection FromModule="Calibration" FromPin="Out" ToModule="FY" ToPin="Collection" />
+		<Connection FromModule="FY" FromPin="Out" ToModule="Text Replace" ToPin="Text" />
+		<Connection FromModule="Text Replace" FromPin="Out" ToModule="Text To Scalar" ToPin="Text" />
+		<Connection FromModule="Calibration" FromPin="Out" ToModule="FX" ToPin="Collection" />
+		<Connection FromModule="Calibration" FromPin="Out" ToModule="CX" ToPin="Collection" />
+		<Connection FromModule="Calibration" FromPin="Out" ToModule="CY" ToPin="Collection" />
+		<Connection FromModule="FX" FromPin="Out" ToModule="Text Replace 2" ToPin="Text" />
+		<Connection FromModule="Text Replace 2" FromPin="Out" ToModule="Text To Scalar 2" ToPin="Text" />
+		<Connection FromModule="CX" FromPin="Out" ToModule="Text Replace 3" ToPin="Text" />
+		<Connection FromModule="Text Replace 3" FromPin="Out" ToModule="Text To Scalar 3" ToPin="Text" />
+		<Connection FromModule="CY" FromPin="Out" ToModule="Text Replace 4" ToPin="Text" />
+		<Connection FromModule="Text Replace 4" FromPin="Out" ToModule="Text To Scalar 4" ToPin="Text" />
+		<Connection FromModule="Divide 4" FromPin="Out" ToModule="Divide" ToPin="B" />
+		<Connection FromModule="Divide" FromPin="Out" ToModule="Arctangent" ToPin="Y" />
+		<Connection FromModule="Arctangent" FromPin="Out" ToModule="Multiply" ToPin="A" />
+		<Connection FromModule="Text To Scalar 2" FromPin="Out" ToModule="Divide 2" ToPin="A" />
+		<Connection FromModule="Text To Scalar" FromPin="Out" ToModule="Divide 2" ToPin="B" />
+		<Connection FromModule="Calibration" FromPin="Out" ToModule="frameWidth" ToPin="Collection" />
+		<Connection FromModule="Calibration" FromPin="Out" ToModule="frameHeight" ToPin="Collection" />
+		<Connection FromModule="frameWidth" FromPin="Out" ToModule="Divide 3" ToPin="A" />
+		<Connection FromModule="frameHeight" FromPin="Out" ToModule="Divide 3" ToPin="B" />
+		<Connection FromModule="Text To Scalar 2" FromPin="Out" ToModule="Divide 4" ToPin="A" />
+		<Connection FromModule="frameWidth" FromPin="Out" ToModule="Divide 4" ToPin="B" />
+		<Connection FromModule="Divide 3" FromPin="Out" ToModule="Multiply 2" ToPin="A" />
+		<Connection FromModule="Divide 2" FromPin="Out" ToModule="Multiply 2" ToPin="B" />
+		<Connection FromModule="Text To Scalar 3" FromPin="Out" ToModule="Divide 5" ToPin="A" />
+		<Connection FromModule="frameWidth" FromPin="Out" ToModule="Divide 5" ToPin="B" />
+		<Connection FromModule="Text To Scalar 4" FromPin="Out" ToModule="Divide 6" ToPin="A" />
+		<Connection FromModule="frameHeight" FromPin="Out" ToModule="Divide 6" ToPin="B" />
+		<Connection FromModule="Divide 5" FromPin="Out" ToModule="Subtract" ToPin="A" />
+		<Connection FromModule="Divide 6" FromPin="Out" ToModule="Subtract 2" ToPin="A" />
+		<Connection FromModule="Multiply" FromPin="Out" ToModule="Vector Concat Multi" ToPin="Vector2" />
+		<Connection FromModule="Multiply 2" FromPin="Out" ToModule="Vector Concat Multi" ToPin="Vector3" />
+		<Connection FromModule="Subtract" FromPin="Out" ToModule="Vector Concat Multi" ToPin="Vector4" />
+		<Connection FromModule="Subtract 2" FromPin="Out" ToModule="Vector Concat Multi" ToPin="Vector5" />
+		<Connection FromModule="Text To Scalar 5" FromPin="Out" ToModule="Vector Concat Multi" ToPin="Vector6" />
+		<Connection FromModule="Text To Scalar 6" FromPin="Out" ToModule="Vector Concat Multi" ToPin="Vector7" />
+		<Connection FromModule="Calibration" FromPin="Out" ToModule="K1" ToPin="Collection" />
+		<Connection FromModule="K1" FromPin="Out" ToModule="Text Replace 5" ToPin="Text" />
+		<Connection FromModule="Text Replace 5" FromPin="Out" ToModule="Text To Scalar 5" ToPin="Text" />
+		<Connection FromModule="Calibration" FromPin="Out" ToModule="K2" ToPin="Collection" />
+		<Connection FromModule="K2" FromPin="Out" ToModule="Text Replace 6" ToPin="Text" />
+		<Connection FromModule="Text Replace 6" FromPin="Out" ToModule="Text To Scalar 6" ToPin="Text" />
+	</Connections>
+</AximmetryCompound>
