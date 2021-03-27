@@ -20,6 +20,7 @@
 			<Items type="list">
 				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-03-21T20:55:14.4839531+02:00" />
 				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-03-21T20:57:48.5554423+02:00" />
+				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-03-27T12:04:12.3707081+02:00" />
 			</Items>
 		</Parameter>
 		<Parameter type="InformationParams" Description="null" Tags="null">
@@ -40,9 +41,9 @@
 			<CoordSys type="ModelCoordSys" Unit="1" Up="Z" RightHanded="True" />
 		</Parameter>
 	</Parameters>
-	<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="REtrackerServer" IsLocked="False">
+	<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="Root" IsLocked="False">
 		<ExtraData>
-			<item key="ViewCenter" type="PointF" value="-710.3474, -622.2449" />
+			<item key="ViewCenter" type="PointF" value="-552.1531, -936.1996" />
 			<item key="ZoomFactor" type="Single" value="0.410886616" />
 			<item key="CurveEditorLayout" type="String" value="&lt;CurveEditorLayout&gt;&#xD;&#xA;&#x9;&lt;Props&gt;&#xD;&#xA;&#x9;&#x9;&lt;StartTime&gt;-0.02&lt;/StartTime&gt;&#xD;&#xA;&#x9;&#x9;&lt;Zooming&gt;250&lt;/Zooming&gt;&#xD;&#xA;&#x9;&#x9;&lt;HeadersWidth&gt;200&lt;/HeadersWidth&gt;&#xD;&#xA;&#x9;&#x9;&lt;ScrollPos&gt;0&lt;/ScrollPos&gt;&#xD;&#xA;&#x9;&lt;/Props&gt;&#xD;&#xA;&lt;/CurveEditorLayout&gt;" />
 			<item key="Location" type="PointF" value="-272, 312" />
@@ -165,7 +166,7 @@
 		<Module Type="TransformationCompose">
 			<Properties Name="Transformation Compose" IsLocked="False">
 				<ExtraData>
-					<item key="Location" type="PointF" value="-285, -1029" />
+					<item key="Location" type="PointF" value="-446, -1044" />
 				</ExtraData>
 			</Properties>
 			<PinValues>
@@ -211,7 +212,7 @@
 		<Module Type="SmoothTransformation">
 			<Properties Name="Smooth Transformation" IsLocked="False">
 				<ExtraData>
-					<item key="Location" type="PointF" value="8, -1017" />
+					<item key="Location" type="PointF" value="59, -1112" />
 				</ExtraData>
 			</Properties>
 			<PinValues>
@@ -330,13 +331,26 @@
 				<Pin Name="B" Type="PinVectorValue" Value="-0.01" />
 			</PinValues>
 		</Module>
+		<Module Type="DelayTransformation">
+			<Properties Name="Delay Transformation" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-121, -1006" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="Delay" Type="PinScalarValue" Value="0" />
+				<Pin Name="Frames" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
 	</Children>
 	<ExposerInputPins>
 		<Pin Name="Address" Type="PinStringValue" SourceModule="OSC Method" SourcePin="Address" />
-		<Pin Name="Delay" Type="PinScalarValue" SourceModule="Smooth Transformation" SourcePin="Delay" />
+		<Pin Name="Smoothing" Type="PinScalarValue" SourceModule="Smooth Transformation" SourcePin="Delay" />
 		<Pin Name="X scale" Type="PinVectorValue" SourceModule="Multiply 4" SourcePin="B" />
 		<Pin Name="Y scale" Type="PinVectorValue" SourceModule="Multiply 5" SourcePin="B" />
 		<Pin Name="Z scale" Type="PinVectorValue" SourceModule="Multiply 6" SourcePin="B" />
+		<Pin Name="Delay" Type="PinScalarValue" SourceModule="Delay Transformation" SourcePin="Delay" />
 	</ExposerInputPins>
 	<ExposerOutputPins>
 		<Pin Name="CamTransform" Type="PinTransformationValue" SourceModule="Smooth Transformation" SourcePin="Out" />
@@ -359,7 +373,7 @@
 		<Connection FromModule="Text To Scalar 2" FromPin="Out" ToModule="Multiply" ToPin="A" />
 		<Connection FromModule="Text To Scalar" FromPin="Out" ToModule="Multiply 2" ToPin="A" />
 		<Connection FromModule="Text To Scalar 3" FromPin="Out" ToModule="Multiply 3" ToPin="A" />
-		<Connection FromModule="Transformation Compose" FromPin="Transformation" ToModule="Smooth Transformation" ToPin="In" />
+		<Connection FromModule="Delay Transformation" FromPin="Out" ToModule="Smooth Transformation" ToPin="In" />
 		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text 4" ToPin="Collection" />
 		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text 5" ToPin="Collection" />
 		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text 6" ToPin="Collection" />
@@ -369,5 +383,6 @@
 		<Connection FromModule="Text To Scalar 5" FromPin="Out" ToModule="Multiply 5" ToPin="A" />
 		<Connection FromModule="Text To Scalar 6" FromPin="Out" ToModule="Multiply 6" ToPin="A" />
 		<Connection FromModule="Text To Scalar 4" FromPin="Out" ToModule="Multiply 4" ToPin="A" />
+		<Connection FromModule="Transformation Compose" FromPin="Transformation" ToModule="Delay Transformation" ToPin="In" />
 	</Connections>
 </AximmetryCompound>
