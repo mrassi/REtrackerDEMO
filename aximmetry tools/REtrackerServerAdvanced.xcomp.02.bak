@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AximmetryCompound version="2021.1.0">
+	<Parameters>
+		<Parameter type="FlowEditingParams" UseDefaults="True" EnableShiftSnap="True" SnapThresholdPixels="10" />
+		<Parameter type="SceneEditingParams" UseDefaults="True" HandleSize="1" SymbolSize="1" ConstantHandleSize="True" ConstantSymbolSize="True" InactiveAxises="True" HelperGeometries="True" RotationMode="0" RotateSpeed="1" TranslateSnapSize="0.1" RotateSnapSize="45" ScaleSnapSize="0.5" CameraMoverSystem="1" AllowCameraRoll="False" />
+		<Parameter type="SequenceEditingParams" UseDefaults="True" EnableShiftSnap="True" SnapThresholdPixels="10" />
+		<Parameter type="TimingParams" UseDefaults="True" Format="TimeAndFrame" FPS="30" BPM="120" BeatsPerMeasure="4" TicksPerBeat="64" BaseDate="2015-01-01T00:00:00.0000000" DateTimeFormat="yy-MM-dd HH:mm" Length="10" />
+		<Parameter type="ArrChannelParams">
+			<PreviewChannels type="dictionary">
+				<item key="2" type="Int32" value="1" />
+				<item key="3" type="Int32" value="1" />
+			</PreviewChannels>
+		</Parameter>
+		<Parameter type="ArrEditContextParams" LastControlBoard="BILLBOARDS">
+			<ControlBoardOrder type="list" itemType="String" />
+			<Bookmarks type="dictionary" />
+		</Parameter>
+		<Parameter type="ArrVideoParams" FrameSize="1920, 1080" PixelAspect="1:1" FrameRate="30" />
+		<Parameter type="ArrHistoryParams">
+			<Items type="list">
+				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-03-31T12:03:24.3787937+03:00" />
+			</Items>
+		</Parameter>
+		<Parameter type="InformationParams" Description="null" Tags="null">
+			<Thumbnail Data="null" />
+		</Parameter>
+		<Parameter type="MacroParams">
+			<Macros type="list" />
+		</Parameter>
+		<Parameter type="ArrRenderingParams" LinearPipeline="False" ColorSpaceConvFilter="*_nrm.*|*_norm.*|*_normal.*|*_met.*|*_rgh.*|*_rog.*|*_spec.*|*_gls.*|*_disp.*|*_aniso.*" />
+		<Parameter type="FBXModelImporterParams" ImportGeometry="True" ImportLights="False" ImportCameras="False" ImportMaterials="True" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" SimpleHitTester="False" />
+		<Parameter type="OBJModelImporterParams" FlipU="False" FlipV="True" ImportMaterials="True" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" SimpleHitTester="False">
+			<CoordSys type="ModelCoordSys" Unit="1" Up="Z" RightHanded="True" />
+		</Parameter>
+		<Parameter type="ColladaModelImporterParams" ImportGeometry="True" ImportLights="False" ImportCameras="False" ImportMaterials="True" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" BindTargetNodes="True" TargetNamePostfix=".Target" />
+		<Parameter type="FBXCameraExporterParams" BillboardRotation="False" BillboardImageSequence="False" BillboardMode="KeyedAdjusted" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="False" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="exr" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" ASCII="False" />
+		<Parameter type="FBXModelExporterParams" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="False" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="png" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" ASCII="False" />
+		<Parameter type="OBJModelExporterParams" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="False" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="png" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" FlipU="False" FlipV="True" ExportVertexColors="False">
+			<CoordSys type="ModelCoordSys" Unit="1" Up="Z" RightHanded="True" />
+		</Parameter>
+	</Parameters>
+	<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="Root" IsLocked="False">
+		<ExtraData>
+			<item key="ViewCenter" type="PointF" value="-552.1531, -936.1996" />
+			<item key="ZoomFactor" type="Single" value="0.410886616" />
+			<item key="CurveEditorLayout" type="String" value="&lt;CurveEditorLayout&gt;&#xD;&#xA;&#x9;&lt;Props&gt;&#xD;&#xA;&#x9;&#x9;&lt;StartTime&gt;-0.02&lt;/StartTime&gt;&#xD;&#xA;&#x9;&#x9;&lt;Zooming&gt;250&lt;/Zooming&gt;&#xD;&#xA;&#x9;&#x9;&lt;HeadersWidth&gt;200&lt;/HeadersWidth&gt;&#xD;&#xA;&#x9;&#x9;&lt;ScrollPos&gt;0&lt;/ScrollPos&gt;&#xD;&#xA;&#x9;&lt;/Props&gt;&#xD;&#xA;&lt;/CurveEditorLayout&gt;" />
+			<item key="Location" type="PointF" value="-272, 312" />
+			<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+		</ExtraData>
+	</Properties>
+	<Children>
+		<Module Type="OSCMethod">
+			<Properties Name="OSC Method" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1587, -989" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Address" Type="PinStringValue" Value="/dimensions" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="Collection Text" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1452, -820" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="4" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="Collection Text 2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1453, -695" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="5" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="RotationMerge">
+			<Properties Name="Rotation Merge" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-745, -694" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="X" Type="PinScalarValue" Value="0" />
+				<Pin Name="Y" Type="PinScalarValue" Value="0" />
+				<Pin Name="Z" Type="PinScalarValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1204, -691" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1199, -794" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 3" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1226, -563" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="Collection Text 3" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1449, -576" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="6" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="VectorMerge">
+			<Properties Name="Vector Merge" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-733, -1200" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="X" Type="PinScalarValue" Value="0" />
+				<Pin Name="Y" Type="PinScalarValue" Value="0" />
+				<Pin Name="Z" Type="PinScalarValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="TransformationCompose">
+			<Properties Name="Transformation Compose" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-446, -1044" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Position" Type="PinVectorValue" Value="12.7500553, 2.27999854, -1.88999522" />
+				<Pin Name="Rotation" Type="PinVectorValue" Value="0, 0, 0" />
+				<Pin Name="Scale" Type="PinVectorValue" Value="1" />
+				<Pin Name="Quaternion" Type="PinVectorValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="Multiply">
+			<Properties Name="Multiply" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-992, -787" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Multiply">
+			<Properties Name="Multiply 2" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-991, -693" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="Multiply">
+			<Properties Name="Multiply 3" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-989, -590" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="-1" />
+			</PinValues>
+		</Module>
+		<Module Type="SmoothTransformation">
+			<Properties Name="Smooth Transformation" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="59, -1112" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="InitValue" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="Circular" Type="PinBoolValue" Value="True" />
+				<Pin Name="Linear" Type="PinBoolValue" Value="False" />
+				<Pin Name="Delay" Type="PinScalarValue" Value="0.17" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="Collection Text 4" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1476, -1406" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="1" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="Collection Text 5" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1477, -1281" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="2" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="CollectionText">
+			<Properties Name="Collection Text 6" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1473, -1162" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Key" Type="PinStringValue" Value="3" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Default" Type="PinStringValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 4" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1223, -1380" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 5" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1228, -1277" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="TextToScalar">
+			<Properties Name="Text To Scalar 6" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-1250, -1149" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Text" Type="PinStringValue" Value="" />
+				<Pin Name="StrictErrChk" Type="PinBoolValue" Value="True" />
+				<Pin Name="ErrorValue" Type="PinDoubleValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="Multiply">
+			<Properties Name="Multiply 5" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-962, -1279" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="0.01" />
+			</PinValues>
+		</Module>
+		<Module Type="Multiply">
+			<Properties Name="Multiply 6" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-953, -1165" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="0.01" />
+			</PinValues>
+		</Module>
+		<Module Type="Multiply">
+			<Properties Name="Multiply 4" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-966, -1378" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="-0.01" />
+			</PinValues>
+		</Module>
+		<Module Type="DelayTransformation">
+			<Properties Name="Delay Transformation" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-121, -1006" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="Delay" Type="PinScalarValue" Value="0" />
+				<Pin Name="Frames" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+	</Children>
+	<ExposerInputPins>
+		<Pin Name="Address" Type="PinStringValue" SourceModule="OSC Method" SourcePin="Address" />
+		<Pin Name="Smoothing" Type="PinScalarValue" SourceModule="Smooth Transformation" SourcePin="Delay" />
+		<Pin Name="X scale" Type="PinVectorValue" SourceModule="Multiply 4" SourcePin="B" />
+		<Pin Name="Y scale" Type="PinVectorValue" SourceModule="Multiply 5" SourcePin="B" />
+		<Pin Name="Z scale" Type="PinVectorValue" SourceModule="Multiply 6" SourcePin="B" />
+		<Pin Name="Delay" Type="PinScalarValue" SourceModule="Delay Transformation" SourcePin="Delay" />
+	</ExposerInputPins>
+	<ExposerOutputPins>
+		<Pin Name="CamTransform" Type="PinTransformationValue" SourceModule="Smooth Transformation" SourcePin="Out" />
+	</ExposerOutputPins>
+	<Connections>
+		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text" ToPin="Collection" />
+		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text 2" ToPin="Collection" />
+		<Connection FromModule="Multiply 2" FromPin="Out" ToModule="Rotation Merge" ToPin="X" />
+		<Connection FromModule="Multiply 3" FromPin="Out" ToModule="Rotation Merge" ToPin="Y" />
+		<Connection FromModule="Multiply" FromPin="Out" ToModule="Rotation Merge" ToPin="Z" />
+		<Connection FromModule="Collection Text 2" FromPin="Out" ToModule="Text To Scalar" ToPin="Text" />
+		<Connection FromModule="Collection Text" FromPin="Out" ToModule="Text To Scalar 2" ToPin="Text" />
+		<Connection FromModule="Collection Text 3" FromPin="Out" ToModule="Text To Scalar 3" ToPin="Text" />
+		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text 3" ToPin="Collection" />
+		<Connection FromModule="Multiply 4" FromPin="Out" ToModule="Vector Merge" ToPin="X" />
+		<Connection FromModule="Multiply 5" FromPin="Out" ToModule="Vector Merge" ToPin="Y" />
+		<Connection FromModule="Multiply 6" FromPin="Out" ToModule="Vector Merge" ToPin="Z" />
+		<Connection FromModule="Vector Merge" FromPin="Vector" ToModule="Transformation Compose" ToPin="Position" />
+		<Connection FromModule="Rotation Merge" FromPin="Rotation" ToModule="Transformation Compose" ToPin="Rotation" />
+		<Connection FromModule="Text To Scalar 2" FromPin="Out" ToModule="Multiply" ToPin="A" />
+		<Connection FromModule="Text To Scalar" FromPin="Out" ToModule="Multiply 2" ToPin="A" />
+		<Connection FromModule="Text To Scalar 3" FromPin="Out" ToModule="Multiply 3" ToPin="A" />
+		<Connection FromModule="Delay Transformation" FromPin="Out" ToModule="Smooth Transformation" ToPin="In" />
+		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text 4" ToPin="Collection" />
+		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text 5" ToPin="Collection" />
+		<Connection FromModule="OSC Method" FromPin="Out" ToModule="Collection Text 6" ToPin="Collection" />
+		<Connection FromModule="Collection Text 4" FromPin="Out" ToModule="Text To Scalar 4" ToPin="Text" />
+		<Connection FromModule="Collection Text 5" FromPin="Out" ToModule="Text To Scalar 5" ToPin="Text" />
+		<Connection FromModule="Collection Text 6" FromPin="Out" ToModule="Text To Scalar 6" ToPin="Text" />
+		<Connection FromModule="Text To Scalar 5" FromPin="Out" ToModule="Multiply 5" ToPin="A" />
+		<Connection FromModule="Text To Scalar 6" FromPin="Out" ToModule="Multiply 6" ToPin="A" />
+		<Connection FromModule="Text To Scalar 4" FromPin="Out" ToModule="Multiply 4" ToPin="A" />
+		<Connection FromModule="Transformation Compose" FromPin="Transformation" ToModule="Delay Transformation" ToPin="In" />
+	</Connections>
+</AximmetryCompound>

@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AximmetryCompound version="2021.1.0">
+	<Parameters>
+		<Parameter type="FlowEditingParams" UseDefaults="True" EnableShiftSnap="True" SnapThresholdPixels="10" />
+		<Parameter type="SceneEditingParams" UseDefaults="True" HandleSize="1" SymbolSize="1" ConstantHandleSize="True" ConstantSymbolSize="True" InactiveAxises="True" HelperGeometries="True" RotationMode="0" RotateSpeed="1" TranslateSnapSize="0.1" RotateSnapSize="45" ScaleSnapSize="0.5" CameraMoverSystem="1" AllowCameraRoll="False" />
+		<Parameter type="SequenceEditingParams" UseDefaults="True" EnableShiftSnap="True" SnapThresholdPixels="10" />
+		<Parameter type="TimingParams" UseDefaults="True" Format="TimeAndFrame" FPS="30" BPM="120" BeatsPerMeasure="4" TicksPerBeat="64" BaseDate="2015-01-01T00:00:00.0000000" DateTimeFormat="yy-MM-dd HH:mm" Length="10" />
+		<Parameter type="ArrChannelParams">
+			<PreviewChannels type="dictionary">
+				<item key="2" type="Int32" value="0" />
+				<item key="3" type="Int32" value="0" />
+			</PreviewChannels>
+		</Parameter>
+		<Parameter type="ArrEditContextParams" LastControlBoard="Root\VirtualCam_A-B\VCam_4_Billboard_Set 1\BILLBOARDS">
+			<ControlBoardOrder type="list" itemType="String" />
+			<Bookmarks type="dictionary">
+				<item key="0" type="String" value="Root" />
+				<item key="1" type="String" value="Root\TalkShow Studio\TalkShow - Center 1" />
+				<item key="2" type="String" value="Root\TalkShow Studio\TalkShow - Center 1" />
+			</Bookmarks>
+		</Parameter>
+		<Parameter type="ArrVideoParams" FrameSize="5120, 2880" PixelAspect="1:1" FrameRate="30" />
+		<Parameter type="ArrHistoryParams">
+			<Items type="list">
+				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-04-01T08:41:25.4125595+03:00" />
+			</Items>
+		</Parameter>
+		<Parameter type="InformationParams" Description="" Tags="">
+			<Thumbnail Data="null" />
+		</Parameter>
+		<Parameter type="MacroParams">
+			<Macros type="list" />
+		</Parameter>
+		<Parameter type="ArrRenderingParams" LinearPipeline="False" ColorSpaceConvFilter="*_nrm.*|*_norm.*|*_normal.*|*_met.*|*_rgh.*|*_rog.*|*_spec.*|*_gls.*|*_disp.*|*_aniso.*" />
+		<Parameter type="FBXModelImporterParams" ImportGeometry="True" ImportLights="False" ImportCameras="False" ImportMaterials="True" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" SimpleHitTester="False" />
+		<Parameter type="OBJModelImporterParams" FlipU="False" FlipV="True" ImportMaterials="False" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" SimpleHitTester="False">
+			<CoordSys type="ModelCoordSys" Unit="1" Up="Z" RightHanded="True" />
+		</Parameter>
+		<Parameter type="ColladaModelImporterParams" ImportGeometry="True" ImportLights="False" ImportCameras="False" ImportMaterials="False" LeaveEarlierMaterials="False" UseShader="[Common]:Shaders\Imported\Imp_General.xshad" BindTargetNodes="True" TargetNamePostfix=".Target" />
+		<Parameter type="FBXCameraExporterParams" BillboardRotation="False" BillboardImageSequence="False" BillboardMode="KeyedAdjusted" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="False" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="exr" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" ASCII="False" />
+		<Parameter type="FBXModelExporterParams" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="True" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="png" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" ASCII="False" />
+		<Parameter type="OBJModelExporterParams" ExportGeometry="True" ExportLights="False" ExportCameras="False" ExportBillboards="True" ExportMaterials="True" CopyTextures="True" AbsoluteTexturePaths="False" KeepExistingTextures="True" SeparateOpacityMaps="True" InvertOpacityMaps="True" ConvertTextures="True" ConvertFrom="dds, hdr" ConvertTo="png" SpecularFactor="1" SpecularPowerFactor="1" ReflectionFactor="1" AllowReflectionMaps="True" AllowLuminosity="False" SequencesStartFromZero="True" SequenceNumberDigits="4" FlipU="False" FlipV="True" ExportVertexColors="False">
+			<CoordSys type="ModelCoordSys" Unit="1" Up="Z" RightHanded="True" />
+		</Parameter>
+	</Parameters>
+	<Properties Color="#DBC038" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="Root" IsLocked="False">
+		<ExtraData>
+			<item key="Location" type="PointF" value="-179, -127" />
+			<item key="ViewCenter" type="PointF" value="-506.992, 208.423" />
+			<item key="ZoomFactor" type="Single" value="0.5223393" />
+			<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+			<item key="Notes" type="String" value="" />
+			<item key="CurveEditorLayout" type="String" value="&lt;CurveEditorLayout&gt;&#xD;&#xA;&#x9;&lt;Props&gt;&#xD;&#xA;&#x9;&#x9;&lt;StartTime&gt;-0.02&lt;/StartTime&gt;&#xD;&#xA;&#x9;&#x9;&lt;Zooming&gt;250&lt;/Zooming&gt;&#xD;&#xA;&#x9;&#x9;&lt;HeadersWidth&gt;176&lt;/HeadersWidth&gt;&#xD;&#xA;&#x9;&#x9;&lt;ScrollPos&gt;0&lt;/ScrollPos&gt;&#xD;&#xA;&#x9;&lt;/Props&gt;&#xD;&#xA;&lt;/CurveEditorLayout&gt;" />
+		</ExtraData>
+	</Properties>
+	<Children>
+		<Module Type="Camera">
+			<Properties Name="Camera 1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="60, -143" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Grouping" Type="PinVectorValue" Value="" />
+				<Pin Name="Transformation" Type="PinTransformationValue" Value="T [-2.26612067, 1.25243092, 2.31297064], [25.7329979, 3.37307525, 0], [1, 0.9999999, 0.9999999]" />
+				<Pin Name="Pivot" Type="PinVectorValue" Value="0, 0, 0" />
+				<Pin Name="BindingType" Type="PinIntValue" Value="bindLookAt" />
+				<Pin Name="AddTransform" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="AddTransfType" Type="PinIntValue" Value="addtLocal" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Main" Type="PinBoolValue" Value="True" />
+				<Pin Name="Orthographic" Type="PinBoolValue" Value="False" />
+				<Pin Name="OrthoSize" Type="PinVectorValue" Value="0, 0" />
+				<Pin Name="NearPlane" Type="PinScalarValue" Value="0.1" />
+				<Pin Name="FarPlane" Type="PinScalarValue" Value="5000" />
+				<Pin Name="ZoomFactor" Type="PinScalarValue" Value="1.732" />
+				<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
+				<Pin Name="ClipPlane" Type="PinVectorValue" Value="" />
+				<Pin Name="Mirror" Type="PinBoolValue" Value="False" />
+				<Pin Name="BgColor" Type="PinColorValue" Value="" />
+				<Pin Name="MaskBgColor" Type="PinColorValue" Value="0, White" />
+				<Pin Name="HighlBgColor" Type="PinColorValue" Value="" />
+				<Pin Name="VisibilityGroup" Type="PinIntValue" Value="1" />
+				<Pin Name="ShaderIndex" Type="PinIntValue" Value="1" />
+				<Pin Name="CondShaderIndex" Type="PinIntValue" Value="0" />
+				<Pin Name="Refraction" Type="PinBoolValue" Value="True" />
+				<Pin Name="SubtreeOnly" Type="PinBoolValue" Value="False" />
+				<Pin Name="OutSize" Type="PinVectorValue" Value="0, 0" />
+				<Pin Name="OutAspect" Type="PinVectorValue" Value="0, 0" />
+				<Pin Name="GuardBand" Type="PinScalarValue" Value="0" />
+				<Pin Name="HDROut" Type="PinBoolValue" Value="True" />
+				<Pin Name="MonoOut" Type="PinBoolValue" Value="False" />
+				<Pin Name="MonoMaskOut" Type="PinBoolValue" Value="False" />
+				<Pin Name="Antialias" Type="PinIntValue" Value="aa8x" />
+				<Pin Name="TranspJitter" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="SceneNode">
+			<Properties Name="Scene Node 1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-965, 608" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Grouping" Type="PinVectorValue" Value="" />
+				<Pin Name="Transformation" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="Pivot" Type="PinVectorValue" Value="0, 0, 0" />
+				<Pin Name="BindingType" Type="PinIntValue" Value="bindLookAt" />
+				<Pin Name="AddTransform" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="AddTransfType" Type="PinIntValue" Value="addtLocal" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Commands" Type="PinVectorValue" Value="" />
+				<Pin Name="InheritLights" Type="PinBoolValue" Value="True" />
+			</PinValues>
+		</Module>
+		<Module Type="TXAntialiaserGW">
+			<Properties Name="TX Antialiaser GW 1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="433, -235" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="False" />
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="VelocityMap" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendFactor" Type="PinScalarValue" Value="0.1" />
+				<Pin Name="BBScale" Type="PinScalarValue" Value="1" />
+				<Pin Name="BHFilter" Type="PinBoolValue" Value="True" />
+			</PinValues>
+		</Module>
+		<Module Type="MultiBlender">
+			<Properties Name="Multi Blender 1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="1392, -8" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Background" Type="PinVideoValue" Value="" />
+				<Pin Name="BgOpacity" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer1" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode1" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity1" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer2" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode2" Type="PinIntValue" Value="bmAdd" />
+				<Pin Name="Opacity2" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer3" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode3" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity3" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer4" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode4" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity4" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer5" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode5" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity5" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer6" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode6" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity6" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer7" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode7" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity7" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer8" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode8" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity8" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer9" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode9" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity9" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer10" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode10" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity10" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer11" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode11" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity11" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer12" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode12" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity12" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer13" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode13" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity13" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer14" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode14" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity14" Type="PinScalarValue" Value="1" />
+				<Pin Name="Layer15" Type="PinVideoValue" Value="" />
+				<Pin Name="BlendingMode15" Type="PinIntValue" Value="bmNormal" />
+				<Pin Name="Opacity15" Type="PinScalarValue" Value="1" />
+				<Pin Name="OpacGamma" Type="PinScalarValue" Value="1" />
+				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="ClipPlane">
+			<Properties Name="Clip Plane" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-221, 738" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Grouping" Type="PinVectorValue" Value="" />
+				<Pin Name="Transformation" Type="PinTransformationValue" Value="T [0, 0, 0], [0, -90.00001, 0], [0.9999997, 0.9999997, 0.9999997]" />
+				<Pin Name="Pivot" Type="PinVectorValue" Value="0, 0, 0" />
+				<Pin Name="BindingType" Type="PinIntValue" Value="bindLookAt" />
+				<Pin Name="AddTransform" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="AddTransfType" Type="PinIntValue" Value="addtLocal" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+			</PinValues>
+		</Module>
+		<Module Type="Camera">
+			<Properties Name="Mirror Camera" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="87.90881, 584.6362" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Grouping" Type="PinVectorValue" Value="" />
+				<Pin Name="Transformation" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="Pivot" Type="PinVectorValue" Value="0, 0, 0" />
+				<Pin Name="BindingType" Type="PinIntValue" Value="bindJoin" />
+				<Pin Name="AddTransform" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="AddTransfType" Type="PinIntValue" Value="addtLocal" />
+				<Pin Name="Index" Type="PinIntValue" Value="0" />
+				<Pin Name="Main" Type="PinBoolValue" Value="True" />
+				<Pin Name="Orthographic" Type="PinBoolValue" Value="False" />
+				<Pin Name="OrthoSize" Type="PinVectorValue" Value="0, 0" />
+				<Pin Name="NearPlane" Type="PinScalarValue" Value="0.1" />
+				<Pin Name="FarPlane" Type="PinScalarValue" Value="5000" />
+				<Pin Name="ZoomFactor" Type="PinScalarValue" Value="1.732" />
+				<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
+				<Pin Name="ClipPlane" Type="PinVectorValue" Value="" />
+				<Pin Name="Mirror" Type="PinBoolValue" Value="True" />
+				<Pin Name="BgColor" Type="PinColorValue" Value="0, White" />
+				<Pin Name="MaskBgColor" Type="PinColorValue" Value="0, White" />
+				<Pin Name="HighlBgColor" Type="PinColorValue" Value="" />
+				<Pin Name="VisibilityGroup" Type="PinIntValue" Value="1" />
+				<Pin Name="ShaderIndex" Type="PinIntValue" Value="1" />
+				<Pin Name="CondShaderIndex" Type="PinIntValue" Value="8" />
+				<Pin Name="Refraction" Type="PinBoolValue" Value="False" />
+				<Pin Name="SubtreeOnly" Type="PinBoolValue" Value="False" />
+				<Pin Name="OutSize" Type="PinVectorValue" Value="" />
+				<Pin Name="OutAspect" Type="PinVectorValue" Value="0, 0" />
+				<Pin Name="GuardBand" Type="PinScalarValue" Value="0" />
+				<Pin Name="HDROut" Type="PinBoolValue" Value="False" />
+				<Pin Name="MonoOut" Type="PinBoolValue" Value="False" />
+				<Pin Name="MonoMaskOut" Type="PinBoolValue" Value="False" />
+				<Pin Name="Antialias" Type="PinIntValue" Value="aaNone" />
+				<Pin Name="TranspJitter" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TransmitVideo">
+			<Properties Name="► MIRROR-1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="617, 585" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="FromTunnel" Type="PinStringValue" Value="" />
+				<Pin Name="IntoTunnel" Type="PinStringValue" Value="MIRROR-1" />
+				<Pin Name="Subtunnel" Type="PinIntValue" Value="0" />
+				<Pin Name="TunnelPrior" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="Blurrer">
+			<Properties Name="Blurrer 1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="389, 585" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="Direction" Type="PinIntValue" Value="bdcdBoth" />
+				<Pin Name="Quality" Type="PinIntValue" Value="bqMedium" />
+				<Pin Name="EdgeMode" Type="PinIntValue" Value="rtClamp" />
+				<Pin Name="Radius" Type="PinScalarValue" Value="0.1" />
+				<Pin Name="Masked" Type="PinBoolValue" Value="False" />
+				<Pin Name="Mask" Type="PinVideoValue" Value="" />
+			</PinValues>
+		</Module>
+		<Module Type="Antialiaser">
+			<Properties Name="Antialiaser 1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="1974, -9" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="Mode" Type="PinIntValue" Value="maamSMAA1x" />
+				<Pin Name="Quality" Type="PinIntValue" Value="aaqHigh" />
+				<Pin Name="Base" Type="PinIntValue" Value="aabLuma" />
+				<Pin Name="Predication" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="ToneMapper">
+			<Properties Name="Tone Mapper 3" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="1142, 90" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="BaseImage" Type="PinBoolValue" Value="False" />
+				<Pin Name="Exposure" Type="PinScalarValue" Value="1.35" />
+				<Pin Name="WhiteLum" Type="PinScalarValue" Value="2.5" />
+				<Pin Name="BgColor" Type="PinColorValue" Value="" />
+				<Pin Name="Glares" Type="PinBoolValue" Value="True" />
+				<Pin Name="BrightThreshold" Type="PinScalarValue" Value="0" />
+				<Pin Name="BrightUpperCut" Type="PinScalarValue" Value="0" />
+				<Pin Name="BrightOffset" Type="PinScalarValue" Value="1" />
+				<Pin Name="BloomSteps" Type="PinIntValue" Value="5" />
+				<Pin Name="BloomIntensity" Type="PinScalarValue" Value="1.5" />
+				<Pin Name="BloomGamma" Type="PinScalarValue" Value="1" />
+				<Pin Name="BloomSize" Type="PinScalarValue" Value="0.24" />
+				<Pin Name="Streaks" Type="PinBoolValue" Value="True" />
+				<Pin Name="StreakType" Type="PinIntValue" Value="gsltCinema" />
+				<Pin Name="StreakIntensity" Type="PinScalarValue" Value="0.18" />
+				<Pin Name="StreakGamma" Type="PinScalarValue" Value="1" />
+				<Pin Name="StreakSize" Type="PinScalarValue" Value="0.06" />
+				<Pin Name="StreakRotation" Type="PinScalarValue" Value="0" />
+				<Pin Name="StreakChromAberr" Type="PinScalarValue" Value="0" />
+				<Pin Name="StreakBlueDepth" Type="PinScalarValue" Value="0.8" />
+				<Pin Name="Ghosts" Type="PinBoolValue" Value="False" />
+				<Pin Name="GhostType" Type="PinIntValue" Value="ggltDefault" />
+				<Pin Name="GhostIntensity" Type="PinScalarValue" Value="1" />
+				<Pin Name="ForceLinear" Type="PinBoolValue" Value="False" />
+				<Pin Name="HDROut" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="ToneMapper">
+			<Properties Name="Tone Mapper 4" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="1142, -73" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="True" />
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="BaseImage" Type="PinBoolValue" Value="True" />
+				<Pin Name="Exposure" Type="PinScalarValue" Value="1" />
+				<Pin Name="WhiteLum" Type="PinScalarValue" Value="2.5" />
+				<Pin Name="BgColor" Type="PinColorValue" Value="" />
+				<Pin Name="Glares" Type="PinBoolValue" Value="True" />
+				<Pin Name="BrightThreshold" Type="PinScalarValue" Value="5" />
+				<Pin Name="BrightUpperCut" Type="PinScalarValue" Value="0" />
+				<Pin Name="BrightOffset" Type="PinScalarValue" Value="1" />
+				<Pin Name="BloomSteps" Type="PinIntValue" Value="4" />
+				<Pin Name="BloomIntensity" Type="PinScalarValue" Value="3.5" />
+				<Pin Name="BloomGamma" Type="PinScalarValue" Value="1" />
+				<Pin Name="BloomSize" Type="PinScalarValue" Value="0.2" />
+				<Pin Name="Streaks" Type="PinBoolValue" Value="True" />
+				<Pin Name="StreakType" Type="PinIntValue" Value="gsltCinema" />
+				<Pin Name="StreakIntensity" Type="PinScalarValue" Value="1" />
+				<Pin Name="StreakGamma" Type="PinScalarValue" Value="1" />
+				<Pin Name="StreakSize" Type="PinScalarValue" Value="0.51" />
+				<Pin Name="StreakRotation" Type="PinScalarValue" Value="0" />
+				<Pin Name="StreakChromAberr" Type="PinScalarValue" Value="0" />
+				<Pin Name="StreakBlueDepth" Type="PinScalarValue" Value="0.8" />
+				<Pin Name="Ghosts" Type="PinBoolValue" Value="False" />
+				<Pin Name="GhostType" Type="PinIntValue" Value="ggltDefault" />
+				<Pin Name="GhostIntensity" Type="PinScalarValue" Value="1" />
+				<Pin Name="ForceLinear" Type="PinBoolValue" Value="False" />
+				<Pin Name="HDROut" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TransmitScalar">
+			<Properties Name="CAMERA ZOOM FACTOR" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-633, -86" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinScalarValue" Value="0" />
+				<Pin Name="FromTunnel" Type="PinStringValue" Value="CAMERA ZOOM FACTOR" />
+				<Pin Name="IntoTunnel" Type="PinStringValue" Value="" />
+				<Pin Name="Subtunnel" Type="PinIntValue" Value="0" />
+				<Pin Name="TunnelPrior" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TransmitTransformation">
+			<Properties Name="CAMERA TRANSFORMATION" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-690, -209" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+				<Pin Name="FromTunnel" Type="PinStringValue" Value="CAMERA TRANSFORMATION" />
+				<Pin Name="IntoTunnel" Type="PinStringValue" Value="" />
+				<Pin Name="Subtunnel" Type="PinIntValue" Value="0" />
+				<Pin Name="TunnelPrior" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TransmitInteger">
+			<Properties Name="VISIBILITY GROUP" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-623, 268" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinIntValue" Value="0" />
+				<Pin Name="FromTunnel" Type="PinStringValue" Value="VISIBILITY GROUP" />
+				<Pin Name="IntoTunnel" Type="PinStringValue" Value="" />
+				<Pin Name="Subtunnel" Type="PinIntValue" Value="0" />
+				<Pin Name="TunnelPrior" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="Divide">
+			<Properties Name="Divide 1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-143, 603" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="A" Type="PinVectorValue" Value="1" />
+				<Pin Name="B" Type="PinVectorValue" Value="2" />
+			</PinValues>
+		</Module>
+		<Module Type="TransmitScalar">
+			<Properties Name="CAMERA GUARD BAND ►" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-623, 388" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinScalarValue" Value="0" />
+				<Pin Name="FromTunnel" Type="PinStringValue" Value="CAMERA GUARD BAND" />
+				<Pin Name="IntoTunnel" Type="PinStringValue" Value="" />
+				<Pin Name="Subtunnel" Type="PinIntValue" Value="0" />
+				<Pin Name="TunnelPrior" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="SystemParams">
+			<Properties Name="System Params 1" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-371, 589" />
+					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
+				</ExtraData>
+			</Properties>
+			<PinValues />
+		</Module>
+		<Module Type="DepthOfFieldGW">
+			<Properties Name="Depth Of Field GW" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="1695, 28" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="False" />
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="FocusPlane" Type="PinScalarValue" Value="0" />
+				<Pin Name="SharpRadius" Type="PinScalarValue" Value="2" />
+				<Pin Name="FocalRadius" Type="PinScalarValue" Value="2" />
+				<Pin Name="MinBlur" Type="PinScalarValue" Value="0" />
+				<Pin Name="NearMaxBlur" Type="PinScalarValue" Value="5" />
+				<Pin Name="FarMaxBlur" Type="PinScalarValue" Value="5" />
+				<Pin Name="BlurFallExp" Type="PinScalarValue" Value="1" />
+				<Pin Name="Bokeh" Type="PinBoolValue" Value="False" />
+				<Pin Name="BokehShape" Type="PinIntValue" Value="bokHeptagon" />
+				<Pin Name="BokehSize" Type="PinScalarValue" Value="20" />
+				<Pin Name="BokehStartBlur" Type="PinScalarValue" Value="3" />
+				<Pin Name="BokehFadeRadius" Type="PinScalarValue" Value="2" />
+				<Pin Name="BokehFallExp" Type="PinScalarValue" Value="1" />
+				<Pin Name="BokehEnergySubFact" Type="PinScalarValue" Value="0" />
+				<Pin Name="BokehIntensity" Type="PinScalarValue" Value="20" />
+				<Pin Name="BokehLumMin" Type="PinScalarValue" Value="0.5" />
+				<Pin Name="BokehLumMax" Type="PinScalarValue" Value="1000" />
+				<Pin Name="BokehOutSatur" Type="PinScalarValue" Value="1" />
+				<Pin Name="BokehOutMaxLum" Type="PinScalarValue" Value="1000" />
+				<Pin Name="BokehReduceEnergyFact" Type="PinScalarValue" Value="1" />
+			</PinValues>
+		</Module>
+		<Module Type="AmbientOcclusionGW">
+			<Properties Name="Ambient Occlusion GW" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="898, -198" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="False" />
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="NormalMap" Type="PinVideoValue" Value="" />
+				<Pin Name="MaskOnly" Type="PinBoolValue" Value="False" />
+				<Pin Name="Radius" Type="PinScalarValue" Value="0.7" />
+				<Pin Name="Bias" Type="PinScalarValue" Value="0.1" />
+				<Pin Name="LargeScaleAO" Type="PinScalarValue" Value="1" />
+				<Pin Name="SmallScaleAO" Type="PinScalarValue" Value="1" />
+				<Pin Name="Gamma" Type="PinScalarValue" Value="1" />
+				<Pin Name="FGAO" Type="PinBoolValue" Value="False" />
+				<Pin Name="FGAOViewDepth" Type="PinScalarValue" Value="0" />
+				<Pin Name="BGAO" Type="PinBoolValue" Value="False" />
+				<Pin Name="BGAOViewDepth" Type="PinScalarValue" Value="0" />
+				<Pin Name="Precision" Type="PinBoolValue" Value="False" />
+				<Pin Name="EdgeMode" Type="PinIntValue" Value="aoemClamp" />
+				<Pin Name="Blur" Type="PinBoolValue" Value="True" />
+				<Pin Name="BlurRadius" Type="PinIntValue" Value="aobr4" />
+				<Pin Name="BlurSharpness" Type="PinScalarValue" Value="16" />
+			</PinValues>
+		</Module>
+		<Module Type="TransmitScalar">
+			<Properties Name="CAMERA ASPECT ►" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-620, 29" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinScalarValue" Value="0" />
+				<Pin Name="FromTunnel" Type="PinStringValue" Value="CAMERA ASPECT" />
+				<Pin Name="IntoTunnel" Type="PinStringValue" Value="" />
+				<Pin Name="Subtunnel" Type="PinIntValue" Value="0" />
+				<Pin Name="TunnelPrior" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TransmitScalar">
+			<Properties Name="CAMERA FOCUS ►" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-621, 128" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinScalarValue" Value="0" />
+				<Pin Name="FromTunnel" Type="PinStringValue" Value="CAMERA FOCUS" />
+				<Pin Name="IntoTunnel" Type="PinStringValue" Value="" />
+				<Pin Name="Subtunnel" Type="PinIntValue" Value="0" />
+				<Pin Name="TunnelPrior" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="Sharpener">
+			<Properties Name="Sharpener" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="698, -221" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Active" Type="PinBoolValue" Value="False" />
+				<Pin Name="Video" Type="PinVideoValue" Value="" />
+				<Pin Name="More" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="Transmit">
+			<Properties Name="CAMERA OUT SIZE ►" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-597, -300" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="In" Type="PinVectorValue" Value="" />
+				<Pin Name="FromTunnel" Type="PinStringValue" Value="CAMERA OUT SIZE" />
+				<Pin Name="IntoTunnel" Type="PinStringValue" Value="" />
+				<Pin Name="Subtunnel" Type="PinIntValue" Value="0" />
+				<Pin Name="TunnelPrior" Type="PinBoolValue" Value="False" />
+			</PinValues>
+		</Module>
+		<Module Type="TransformationConcat">
+			<Properties Name="Transformation Concat" IsLocked="False">
+				<ExtraData>
+					<item key="Location" type="PointF" value="-278, -193" />
+				</ExtraData>
+			</Properties>
+			<PinValues>
+				<Pin Name="Transformation" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+			</PinValues>
+		</Module>
+	</Children>
+	<ExposerInputPins>
+		<Pin Name="Out Size" Type="PinVectorValue" SourceModule="CAMERA OUT SIZE ►" SourcePin="In" />
+		<Pin Name="Cam Transform" Type="PinTransformationValue" SourceModule="Transformation Concat" SourcePin="Transformation" />
+		<Pin Name="Zoom Factor" Type="PinScalarValue" SourceModule="CAMERA ZOOM FACTOR" SourcePin="In" />
+		<Pin Name="Aspect" Type="PinScalarValue" SourceModule="CAMERA ASPECT ►" SourcePin="In" />
+		<Pin Name="Focus" Type="PinScalarValue" SourceModule="CAMERA FOCUS ►" SourcePin="In" />
+		<Pin Name="Visibility Group" Type="PinIntValue" SourceModule="VISIBILITY GROUP" SourcePin="In" />
+		<Pin Name="Guard Band" Type="PinScalarValue" SourceModule="CAMERA GUARD BAND ►" SourcePin="In" />
+	</ExposerInputPins>
+	<ExposerOutputPins>
+		<Pin Name="Children" Type="PinSceneObjectChildReferenceValue" SourceModule="Scene Node 1" SourcePin="Children" />
+		<Pin Name="Out" Type="PinVideoValue" SourceModule="Antialiaser 1" SourcePin="Out" />
+		<Pin Name="Bindings" Type="PinSceneFrameBindingReferenceValue" SourceModule="Camera 1" SourcePin="Bindings" />
+		<Pin Name="Affecting Lights" Type="PinAffectingLightReferenceValue" SourceModule="Scene Node 1" SourcePin="AffectingLights" />
+		<Pin Name="Mask" Type="PinVideoValue" SourceModule="Camera 1" SourcePin="Mask" />
+	</ExposerOutputPins>
+	<Connections>
+		<Connection FromModule="Scene Node 1" FromPin="Children" ToModule="Camera 1" ToPin="Parent" />
+		<Connection FromModule="Transformation Concat" FromPin="Out" ToModule="Camera 1" ToPin="Transformation" />
+		<Connection FromModule="CAMERA ZOOM FACTOR" FromPin="Out" ToModule="Camera 1" ToPin="ZoomFactor" />
+		<Connection FromModule="CAMERA ASPECT ►" FromPin="Out" ToModule="Camera 1" ToPin="Aspect" />
+		<Connection FromModule="VISIBILITY GROUP" FromPin="Out" ToModule="Camera 1" ToPin="VisibilityGroup" />
+		<Connection FromModule="CAMERA OUT SIZE ►" FromPin="Out" ToModule="Camera 1" ToPin="OutSize" />
+		<Connection FromModule="CAMERA GUARD BAND ►" FromPin="Out" ToModule="Camera 1" ToPin="GuardBand" />
+		<Connection FromModule="Camera 1" FromPin="Out" ToModule="TX Antialiaser GW 1" ToPin="Video" />
+		<Connection FromModule="Camera 1" FromPin="VelocityMap" ToModule="TX Antialiaser GW 1" ToPin="VelocityMap" />
+		<Connection FromModule="Tone Mapper 4" FromPin="Out" ToModule="Multi Blender 1" ToPin="Background" />
+		<Connection FromModule="Camera 1" FromPin="TranspOut" ToModule="Multi Blender 1" ToPin="Layer1" />
+		<Connection FromModule="Tone Mapper 3" FromPin="Out" ToModule="Multi Blender 1" ToPin="Layer2" />
+		<Connection FromModule="Scene Node 1" FromPin="Children" ToModule="Clip Plane" ToPin="Parent" />
+		<Connection FromModule="Scene Node 1" FromPin="Children" ToModule="Mirror Camera" ToPin="Parent" />
+		<Connection FromModule="Camera 1" FromPin="Bindings" ToModule="Mirror Camera" ToPin="BoundTo" />
+		<Connection FromModule="Clip Plane" FromPin="Plane" ToModule="Mirror Camera" ToPin="ClipPlane" />
+		<Connection FromModule="VISIBILITY GROUP" FromPin="Out" ToModule="Mirror Camera" ToPin="VisibilityGroup" />
+		<Connection FromModule="Divide 1" FromPin="Out" ToModule="Mirror Camera" ToPin="OutSize" />
+		<Connection FromModule="Blurrer 1" FromPin="Out" ToModule="► MIRROR-1" ToPin="Video" />
+		<Connection FromModule="Mirror Camera" FromPin="Out" ToModule="Blurrer 1" ToPin="Video" />
+		<Connection FromModule="Depth Of Field GW" FromPin="Out" ToModule="Antialiaser 1" ToPin="Video" />
+		<Connection FromModule="Camera 1" FromPin="HighlightMap" ToModule="Tone Mapper 3" ToPin="Video" />
+		<Connection FromModule="Ambient Occlusion GW" FromPin="Out" ToModule="Tone Mapper 4" ToPin="Video" />
+		<Connection FromModule="System Params 1" FromPin="FrameSize" ToModule="Divide 1" ToPin="A" />
+		<Connection FromModule="Multi Blender 1" FromPin="Out" ToModule="Depth Of Field GW" ToPin="Video" />
+		<Connection FromModule="CAMERA FOCUS ►" FromPin="Out" ToModule="Depth Of Field GW" ToPin="FocusPlane" />
+		<Connection FromModule="Sharpener" FromPin="Out" ToModule="Ambient Occlusion GW" ToPin="Video" />
+		<Connection FromModule="TX Antialiaser GW 1" FromPin="Out" ToModule="Sharpener" ToPin="Video" />
+		<Connection FromModule="CAMERA TRANSFORMATION" FromPin="Out" ToModule="Transformation Concat" ToPin="After" />
+	</Connections>
+</AximmetryCompound>
