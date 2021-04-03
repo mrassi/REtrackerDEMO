@@ -1,0 +1,27 @@
+REtracker
+
+The T265 is an Intel RealSense high precision  tracking sensor. 
+We used it to create our own REtracker software. The software is renderer agnostic, meaning it works with all engines. 
+You don’t need any markers at the set and you can use it outdoors and indoors. You need to purchase the sensor yourself from Intel website (check readme file)
+
+The price is 2000$/studio.  Meaning you can use the same license for up to 6 cameras (u need one sensor per camera, sensor costs 199$)
+We also provide one on one remote support and training. This offer is only available for select customers as we are limiting it to few licenses per region.
+The sensor connects to the PC or to a laptop. You can use any broadcast camera. It is mounted on top of it.
+The REtracker software can be installed on any mini pc (i3, 4 GB ram) and the software will send tracking data via Wifi. Or you can connect it directly to the renderer PC. 
+
+When we started this project our goals were:
+- initial deployment time of less than 10 minutes
+- Daily use setup should take less than 2 minutes
+- Robust enough for live broadcast
+- Ability for use with most engines
+- Very easy workflow
+
+We uploaded an Aximmetry sample project on our github ( https://github.com/mrassi/REtrackerDEMO ) and two compounds:
+1 - tracking data receiver 
+2- lens distortion compound
+
+you can track 3 cameras simultaneously with the same Aximmetry license on a single PC
+
+As for Unreal it works with the native unreal plugins. Just check the UE project in the link. 
+
+https://drive.google.com/file/d/1QGy64LtZDULL6UoWfoyIWebHc6tLKciS/view?usp=drivesdk
