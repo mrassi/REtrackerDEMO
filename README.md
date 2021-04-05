@@ -38,6 +38,10 @@ For full product contact Rassi Engineering +9613341934 or marwan@rassi.me)
 
 1- Tested extension cable [from Amazon](https://www.amazon.com/gp/product/B07MZRB6LN)
 
-2- Download Calibration pattern (camera-calibration-checker-board_9x7.pdf)  print it and tape it to a board
+2- Check the 3D-printable design (mount_t265_d435.stl) for attaching the Realsense with a 1/4 inch screw
 
-3- Check the 3D-printable design (mount_t265_d435.stl) for attaching the Realsense with a 1/4 inch screw
+# Lens calibration procedure
+
+1- Download Calibration pattern (camera-calibration-checker-board_9x7.pdf)  print it and tape it to a board
+
+please note the following

@@ -1,6 +1,6 @@
 REtracker
 
-The T265 is an Intel RealSense high precision  tracking sensor. 
+The T265 is an Intel RealSense high precision tracking sensor. 
 We used it to create our own REtracker software. The software is renderer agnostic, meaning it works with all engines. 
 You don’t need any markers at the set and you can use it outdoors and indoors. You need to purchase the sensor yourself from Intel website (check readme file)
 
