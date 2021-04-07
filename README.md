@@ -70,10 +70,11 @@ Sample workflow video: [check video here](https://youtu.be/-iM_Fvp7t80)
 
 Further stuff at my [Youtube page](https://www.youtube.com/user/adorablemarwan)
 
-As for Unreal it works with the native unreal OSC plugin. 
+As for Unreal it works with the native unreal OSC plugin.
+ 
 A Livelink Version for Unreal is in the making, it is still in beta, we will release it soon enough.
 
 
-The pre-launch price is 2000$/studio.  Meaning you can use the same license for up to 6 cameras (u need one sensor per camera, sensor costs 199$)
+The pre-launch price is 2000$/studio.  Meaning you can use the same license for up to 6 cameras (you need one sensor per camera, sensor costs 199$)
 We also provide one on one remote support and training. This offer is only available for select customers as we are limiting it to few licenses per region.
 Some exceptions are made for Indie companies and the ones whose input help our progress, we sell them single licenses with options to upgrade at a reduced cost.
