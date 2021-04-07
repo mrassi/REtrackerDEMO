@@ -23,6 +23,7 @@
 		<Parameter type="ArrHistoryParams">
 			<Items type="list">
 				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-04-01T08:41:25.4125595+03:00" />
+				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-04-07T21:53:15.9880880+03:00" />
 			</Items>
 		</Parameter>
 		<Parameter type="InformationParams" Description="" Tags="">
@@ -389,7 +390,7 @@
 		<Module Type="TransmitTransformation">
 			<Properties Name="CAMERA TRANSFORMATION" IsLocked="False">
 				<ExtraData>
-					<item key="Location" type="PointF" value="-690, -209" />
+					<item key="Location" type="PointF" value="-766, -163" />
 				</ExtraData>
 			</Properties>
 			<PinValues>
@@ -573,7 +574,7 @@
 	</Children>
 	<ExposerInputPins>
 		<Pin Name="Out Size" Type="PinVectorValue" SourceModule="CAMERA OUT SIZE ►" SourcePin="In" />
-		<Pin Name="Cam Transform" Type="PinTransformationValue" SourceModule="Transformation Concat" SourcePin="Transformation" />
+		<Pin Name="Cam Transform" Type="PinTransformationValue" SourceModule="Transformation Concat" SourcePin="After" />
 		<Pin Name="Zoom Factor" Type="PinScalarValue" SourceModule="CAMERA ZOOM FACTOR" SourcePin="In" />
 		<Pin Name="Aspect" Type="PinScalarValue" SourceModule="CAMERA ASPECT ►" SourcePin="In" />
 		<Pin Name="Focus" Type="PinScalarValue" SourceModule="CAMERA FOCUS ►" SourcePin="In" />
@@ -616,6 +617,6 @@
 		<Connection FromModule="CAMERA FOCUS ►" FromPin="Out" ToModule="Depth Of Field GW" ToPin="FocusPlane" />
 		<Connection FromModule="Sharpener" FromPin="Out" ToModule="Ambient Occlusion GW" ToPin="Video" />
 		<Connection FromModule="TX Antialiaser GW 1" FromPin="Out" ToModule="Sharpener" ToPin="Video" />
-		<Connection FromModule="CAMERA TRANSFORMATION" FromPin="Out" ToModule="Transformation Concat" ToPin="After" />
+		<Connection FromModule="CAMERA TRANSFORMATION" FromPin="Out" ToModule="Transformation Concat" ToPin="Transformation" />
 	</Connections>
 </AximmetryCompound>

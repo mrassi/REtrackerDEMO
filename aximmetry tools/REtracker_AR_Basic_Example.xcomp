@@ -17,6 +17,7 @@
 			<Items type="list">
 				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-04-01T08:45:50.0005685+03:00" />
 				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-04-01T08:46:42.2437363+03:00" />
+				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-04-07T21:54:37.9312424+03:00" />
 			</Items>
 		</Parameter>
 		<Parameter type="InformationParams" Description="" Tags="">
@@ -8827,7 +8828,7 @@
 								<ExtraData />
 							</Properties>
 							<PinValues>
-								<Pin Name="In" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+								<Pin Name="In" Type="PinTransformationValue" Value="T [0, 0, 0], [-90, 0, 0], [1, 1, 1]" />
 								<Pin Name="UseDefault" Type="PinBoolValue" Value="False" />
 								<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
 							</PinValues>
@@ -12323,10 +12324,10 @@
 		<Module Type="Compound">
 			<Properties Color="#DBC038" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="RE_Render_General" IsLocked="False">
 				<ExtraData>
-					<item key="Importer" type="String" value="LinkedCompound" />
-					<item key="ImporterVersion" type="Int32" value="3" />
+					<item key="ImportSourceHash" type="String" value="0D512A34E46523EE334F149DED604DB5" />
 					<item key="ImportSourcePath" type="String" value="[Common_Studio]:Compounds\Render\RE_Render_General.xcomp" />
-					<item key="ImportSourceHash" type="String" value="16239EF1DF9406C31AC09A5BC52E137E" />
+					<item key="ImporterVersion" type="Int32" value="3" />
+					<item key="Importer" type="String" value="LinkedCompound" />
 					<item key="ViewCenter" type="PointF" value="-506.992, 208.423" />
 					<item key="ZoomFactor" type="Single" value="0.5223393" />
 					<item key="Notes" type="String" value="" />
@@ -12844,7 +12845,7 @@
 				<Module Type="TransformationConcat">
 					<Properties Name="Transformation Concat" IsLocked="False">
 						<ExtraData>
-							<item key="Location" type="PointF" value="-278, -193" />
+							<item key="Location" type="PointF" value="-297, -181" />
 						</ExtraData>
 					</Properties>
 					<PinValues>
@@ -12854,7 +12855,7 @@
 			</Children>
 			<ExposerInputPins>
 				<Pin Name="Out Size" Type="PinVectorValue" IsLocked="True" SourceModule="CAMERA OUT SIZE ►" SourcePin="In" />
-				<Pin Name="Cam Transform" Type="PinTransformationValue" IsLocked="True" SourceModule="Transformation Concat" SourcePin="Transformation" />
+				<Pin Name="Cam Transform" Type="PinTransformationValue" IsLocked="True" SourceModule="Transformation Concat" SourcePin="After" />
 				<Pin Name="Zoom Factor" Type="PinScalarValue" IsLocked="True" SourceModule="CAMERA ZOOM FACTOR" SourcePin="In" />
 				<Pin Name="Aspect" Type="PinScalarValue" IsLocked="True" SourceModule="CAMERA ASPECT ►" SourcePin="In" />
 				<Pin Name="Focus" Type="PinScalarValue" IsLocked="True" SourceModule="CAMERA FOCUS ►" SourcePin="In" />
@@ -12897,7 +12898,7 @@
 				<Connection FromModule="CAMERA FOCUS ►" FromPin="Out" ToModule="Depth Of Field GW" ToPin="FocusPlane" />
 				<Connection FromModule="Sharpener" FromPin="Out" ToModule="Ambient Occlusion GW" ToPin="Video" />
 				<Connection FromModule="TX Antialiaser GW 1" FromPin="Out" ToModule="Sharpener" ToPin="Video" />
-				<Connection FromModule="CAMERA TRANSFORMATION" FromPin="Out" ToModule="Transformation Concat" ToPin="After" />
+				<Connection FromModule="CAMERA TRANSFORMATION" FromPin="Out" ToModule="Transformation Concat" ToPin="Transformation" />
 			</Connections>
 		</Module>
 	</Children>

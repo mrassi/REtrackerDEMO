@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<AximmetryCompound version="2021.2.0">
+<AximmetryCompound version="2021.1.0">
 	<Parameters>
 		<Parameter type="FlowEditingParams" UseDefaults="True" EnableShiftSnap="True" SnapThresholdPixels="10" />
 		<Parameter type="SceneEditingParams" UseDefaults="True" HandleSize="1" SymbolSize="1" ConstantHandleSize="True" ConstantSymbolSize="True" InactiveAxises="True" HelperGeometries="True" RotationMode="0" RotateSpeed="1" TranslateSnapSize="0.1" RotateSnapSize="45" ScaleSnapSize="0.5" CameraMoverSystem="1" AllowCameraRoll="False" />
 		<Parameter type="SequenceEditingParams" UseDefaults="True" EnableShiftSnap="True" SnapThresholdPixels="10" />
-		<Parameter type="TimingParams" UseDefaults="True" Format="TimeAndFrame" SystemFPS="True" FPS="30" BPM="120" BeatsPerMeasure="4" TicksPerBeat="64" BaseDate="2015-01-01T00:00:00.0000000" DateTimeFormat="yy-MM-dd HH:mm" Length="10" />
+		<Parameter type="TimingParams" UseDefaults="True" Format="TimeAndFrame" FPS="30" BPM="120" BeatsPerMeasure="4" TicksPerBeat="64" BaseDate="2015-01-01T00:00:00.0000000" DateTimeFormat="yy-MM-dd HH:mm" Length="10" />
 		<Parameter type="ArrChannelParams">
 			<PreviewChannels type="dictionary">
 				<item key="2" type="Int32" value="3" />
@@ -17,7 +17,8 @@
 		<Parameter type="ArrVideoParams" FrameSize="1920, 1080" PixelAspect="1:1" FrameRate="60" />
 		<Parameter type="ArrHistoryParams">
 			<Items type="list">
-				<item type="ArrHistoryItem" UserName="ryiga / Unlimited Motion Ltd (RyiGarry)" ModifiedTime="2021-04-03T16:58:49.5983947+01:00" />
+				<item type="ArrHistoryItem" UserName="ryiga / Unlimited Motion Ltd (RyiGarry)" ModifiedTime="2021-04-03T18:58:49.5983947+03:00" />
+				<item type="ArrHistoryItem" UserName="Admin / Marwan Rassi (marwanrassi)" ModifiedTime="2021-04-07T21:50:45.9639181+03:00" />
 			</Items>
 		</Parameter>
 		<Parameter type="InformationParams" Description="" Tags="">
@@ -1101,8 +1102,6 @@
 								<Pin Name="Receive" Type="PinBoolValue" Value="True" />
 								<Pin Name="Immediate" Type="PinBoolValue" Value="False" />
 								<Pin Name="FwdToRemotes" Type="PinBoolValue" Value="False" />
-								<Pin Name="TimecodeSync" Type="PinBoolValue" Value="False" />
-								<Pin Name="RefTimecode" Type="PinIntValue" Value="0" />
 								<Pin Name="Delay" Type="PinDoubleValue" Value="0" />
 								<Pin Name="ZoomDelay" Type="PinDoubleValue" Value="0" />
 								<Pin Name="ManualLens" Type="PinBoolValue" Value="False" />
@@ -1347,14 +1346,14 @@
 							<Properties Color="#E6D8D1" ColorEdited="True" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="INPUT" IsLocked="False">
 								<ExtraData>
 									<item key="Location" type="PointF" value="-442, -599" />
-									<item key="ViewCenter" type="PointF" value="-93.12965, 47.10557" />
+									<item key="ViewCenter" type="PointF" value="-640.3739, 227.9853" />
 									<item key="ZoomFactor" type="Single" value="0.923410356" />
 									<item key="Notes" type="String" value="" />
 									<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
 									<item key="Importer" type="String" value="LinkedCompound" />
 									<item key="ImporterVersion" type="Int32" value="3" />
 									<item key="ImportSourcePath" type="String" value="[Common_Studio]:Compounds\TrackedCam\Elements\TrkCam_Input.xcomp" />
-									<item key="ImportSourceHash" type="String" value="ECE1544D16D5EC94299803CA840F6A55" />
+									<item key="ImportSourceHash" type="String" value="DD374CFBFA39E9A4B2F60BEDE2D9CB7C" />
 								</ExtraData>
 							</Properties>
 							<Children>
@@ -1383,8 +1382,18 @@
 										<Pin Name="Mipmaps" Type="PinBoolValue" Value="False" />
 										<Pin Name="Opacity" Type="PinScalarValue" Value="1" />
 										<Pin Name="NoInputImage" Type="PinVideoValue" Value="" />
-										<Pin Name="DummyOut" Type="PinBoolValue" Value="False" />
 										<Pin Name="EnableLog" Type="PinBoolValue" Value="True" />
+									</PinValues>
+								</Module>
+								<Module Type="And">
+									<Properties Name="Test" IsLocked="False">
+										<ExtraData>
+											<item key="Location" type="PointF" value="-257, 222" />
+										</ExtraData>
+									</Properties>
+									<PinValues>
+										<Pin Name="A" Type="PinBoolValue" Value="False" />
+										<Pin Name="B" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
 								<Module Type="Compound">
@@ -1508,10 +1517,23 @@
 										<Connection FromModule="Format Scalars 1" FromPin="Out" ToModule="► INPUT TECH DATA [1]" ToPin="In" />
 									</Connections>
 								</Module>
+								<Module Type="IfVideo">
+									<Properties Name="If Video" IsLocked="False">
+										<ExtraData>
+											<item key="Location" type="PointF" value="434, -80" />
+										</ExtraData>
+									</Properties>
+									<PinValues>
+										<Pin Name="If" Type="PinBoolValue" Value="False" />
+										<Pin Name="Then" Type="PinVideoValue" Value="" />
+										<Pin Name="Else" Type="PinVideoValue" Value="" />
+										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
+									</PinValues>
+								</Module>
 								<Module Type="CopyInteger">
 									<Properties Name="Copy Integer" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-1076, 197" />
+											<item key="Location" type="PointF" value="-1237, 417" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -1523,7 +1545,7 @@
 								<Module Type="CopyInteger">
 									<Properties Name="Copy Integer 2" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-1083, 282" />
+											<item key="Location" type="PointF" value="-1244, 502" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -1535,7 +1557,7 @@
 								<Module Type="Equal">
 									<Properties Name="Equal" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-860, 287" />
+											<item key="Location" type="PointF" value="-1021, 507" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -1546,7 +1568,7 @@
 								<Module Type="CopyLogical">
 									<Properties Name="On" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-913, 112" />
+											<item key="Location" type="PointF" value="-804, 207" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -1584,97 +1606,44 @@
 										<Pin Name="Default" Type="PinScalarValue" Value="0" />
 									</PinValues>
 								</Module>
-								<Module Type="AudioInput">
-									<Properties Name="Audio Input" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-61, -29" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Device" Type="PinStringValue" Value="DirectSound: Primary Sound Capture Driver" />
-										<Pin Name="Open" Type="PinBoolValue" Value="True" />
-									</PinValues>
-								</Module>
-								<Module Type="IfAudio">
-									<Properties Name="If Audio" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="139, -167" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="AudioDelayer">
-									<Properties Name="Audio Delayer" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="148, -27" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Delay" Type="PinScalarValue" Value="0" />
-									</PinValues>
-								</Module>
-								<Module Type="AudioFader">
-									<Properties Name="Audio Fader" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="345, -204" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Level" Type="PinScalarValue" Value="0" />
-										<Pin Name="Silence" Type="PinScalarValue" Value="-60" />
-										<Pin Name="Force" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 							</Children>
 							<ExposerInputPins>
 								<Pin Name="Index" Type="PinIntValue" IsLocked="True" SourceModule="Input_Tech_Data 1" SourcePin="Index" />
 								<Pin Name="#On" Type="PinBoolValue" IsLocked="True" SourceModule="On" SourcePin="In" />
+								<Pin Name="#_Test" Type="PinBoolValue" IsLocked="True" SourceModule="Test" SourcePin="B" />
 								<Pin Name="Camera Device" Type="PinStringValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Device" />
 								<Pin Name="Camera Mode" Type="PinStringValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Mode" />
-								<Pin Name="Use Audio Device" Type="PinBoolValue" IsLocked="True" SourceModule="If Audio" SourcePin="If" />
-								<Pin Name="Audio Device" Type="PinStringValue" IsLocked="True" SourceModule="Audio Input" SourcePin="Device" />
-								<Pin Name="Audio Dev Delay" Type="PinScalarValue" IsLocked="True" SourceModule="Audio Delayer" SourcePin="Delay" />
-								<Pin Name="Audio Level" Type="PinScalarValue" IsLocked="True" SourceModule="Audio Fader" SourcePin="Level" />
 								<Pin Name="Timecode Master" Type="PinBoolValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="TimecodeMaster" />
 								<Pin Name="In Color Space" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="InColorSpace" />
 								<Pin Name="In Gamma Curve" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="InGammaCurve" />
 								<Pin Name="Exposure" Type="PinScalarValue" IsLocked="True" SourceModule="Dash Scalar Custom" SourcePin="In" />
 								<Pin Name="Chroma Offset" Type="PinScalarValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="ChromaOffset" />
 								<Pin Name="Camera Delay" Type="PinDoubleValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Delay" />
+								<Pin Name="Test Input" Type="PinVideoValue" IsLocked="True" SourceModule="If Video" SourcePin="Then" />
 								<Pin Name="No Input Image" Type="PinVideoValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="NoInputImage" />
 								<Pin Name="$Enum,Engine,Local,Remote #1,Remote #2,Remote #3,Remote #4" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer" SourcePin="In" />
 								<Pin Name="Cur Engine" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 2" SourcePin="In" />
 							</ExposerInputPins>
 							<ExposerOutputPins>
-								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Out" />
-								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Audio Fader" SourcePin="Out" />
+								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="If Video" SourcePin="Out" />
+								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Audio" />
 								<Pin Name="Open" Type="PinBoolValue" IsLocked="True" SourceModule="And 4" SourcePin="Out" />
 								<Pin Name="Enab Monitor" Type="PinBoolValue" IsLocked="True" SourceModule="Equal" SourcePin="Out" />
-								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Timecode" />
 							</ExposerOutputPins>
 							<Connections>
 								<Connection FromModule="And 4" FromPin="Out" ToModule="Video Input 1" ToPin="Open" />
 								<Connection FromModule="Dash Scalar Custom" FromPin="Out" ToModule="Video Input 1" ToPin="Exposure" />
+								<Connection FromModule="On" FromPin="Out" ToModule="Test" ToPin="A" />
 								<Connection FromModule="Video Input 1" FromPin="TimeDelta" ToModule="Input_Tech_Data 1" ToPin="Time Delta" />
 								<Connection FromModule="Video Input 1" FromPin="SyncDelta" ToModule="Input_Tech_Data 1" ToPin="Sync Delta" />
 								<Connection FromModule="Video Input 1" FromPin="SyncBufLevel" ToModule="Input_Tech_Data 1" ToPin="Sync Buf Level" />
 								<Connection FromModule="Video Input 1" FromPin="HWBufLevel" ToModule="Input_Tech_Data 1" ToPin="HW Buf Level" />
+								<Connection FromModule="Test" FromPin="Out" ToModule="If Video" ToPin="If" />
+								<Connection FromModule="Video Input 1" FromPin="Out" ToModule="If Video" ToPin="Else" />
 								<Connection FromModule="Copy Integer" FromPin="Out" ToModule="Equal" ToPin="A" />
 								<Connection FromModule="Copy Integer 2" FromPin="Out" ToModule="Equal" ToPin="B" />
 								<Connection FromModule="On" FromPin="Out" ToModule="And 4" ToPin="A" />
 								<Connection FromModule="Equal" FromPin="Out" ToModule="And 4" ToPin="B" />
-								<Connection FromModule="Audio Delayer" FromPin="Out" ToModule="If Audio" ToPin="Then" />
-								<Connection FromModule="Video Input 1" FromPin="Audio" ToModule="If Audio" ToPin="Else" />
-								<Connection FromModule="Audio Input" FromPin="Out" ToModule="Audio Delayer" ToPin="Audio" />
-								<Connection FromModule="If Audio" FromPin="Out" ToModule="Audio Fader" ToPin="Audio" />
 							</Connections>
 						</Module>
 						<Module Type="If">
@@ -1712,14 +1681,17 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="Engine" Type="PinIntValue" Value="engLocal" />
 										<Pin Name="OutputFolder" Type="PinStringValue" Value="" />
 										<Pin Name="OutputFile" Type="PinStringValue" Value="" />
 										<Pin Name="AutoNumbering" Type="PinBoolValue" Value="True" />
 										<Pin Name="ExactPath" Type="PinStringValue" Value="" />
 										<Pin Name="OutputSuffix" Type="PinStringValue" Value="" />
 										<Pin Name="InputFile" Type="PinStringValue" Value="" />
+										<Pin Name="Cursor" Type="PinDoubleValue" Value="0" />
+										<Pin Name="Offset" Type="PinDoubleValue" Value="0" />
 										<Pin Name="State" Type="PinIntValue" Value="dssIdle" />
+										<Pin Name="Speed" Type="PinScalarValue" Value="1" />
+										<Pin Name="Looping" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
 								<Module Type="VideoRecorder">
@@ -1765,6 +1737,7 @@
 										<Pin Name="AudioChannels" Type="PinIntValue" Value="aclStereo" />
 										<Pin Name="AudioKbps" Type="PinIntValue" Value="vrabr256" />
 										<Pin Name="UseMasterTC" Type="PinBoolValue" Value="False" />
+										<Pin Name="Timecode" Type="PinIntValue" Value="0" />
 									</PinValues>
 								</Module>
 								<Module Type="Equal">
@@ -1915,7 +1888,6 @@
 										<Pin Name="Buffered" Type="PinBoolValue" Value="False" />
 										<Pin Name="BufferMin" Type="PinIntValue" Value="0" />
 										<Pin Name="BufferMax" Type="PinIntValue" Value="2" />
-										<Pin Name="DummyOut" Type="PinBoolValue" Value="False" />
 										<Pin Name="ManualTime" Type="PinDoubleValue" Value="0" />
 										<Pin Name="StartTime" Type="PinDoubleValue" Value="0" />
 										<Pin Name="Speed" Type="PinScalarValue" Value="1" />
@@ -2090,19 +2062,6 @@
 										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer 3" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1918, 1272" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="0" />
-										<Pin Name="Else" Type="PinIntValue" Value="-1" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 								<Module Type="CollectionLogical">
 									<Properties Name="Collection Logical 2" IsLocked="False">
 										<ExtraData>
@@ -2125,55 +2084,13 @@
 										<Pin Name="In" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1902, 838" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="5" />
-										<Pin Name="Else" Type="PinIntValue" Value="0" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer 2" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1912, 1034" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="0" />
-										<Pin Name="Else" Type="PinIntValue" Value="1" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="IfScalar">
-									<Properties Name="If Scalar" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1906, 936" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinScalarValue" Value="0.1" />
-										<Pin Name="Else" Type="PinScalarValue" Value="0" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 							</Children>
 							<ExposerInputPins>
 								<Pin Name="#On" Type="PinBoolValue" IsLocked="True" SourceModule="If 4" SourcePin="If" />
 								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="Copy Video" SourcePin="Video" />
 								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Copy Audio" SourcePin="In" />
 								<Pin Name="State" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 2" SourcePin="In" />
-								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" SourceModule="If Integer 3" SourcePin="Then" />
+								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" />
 								<Pin Name="Engine" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 4" SourcePin="In" />
 								<Pin Name="Exact Path" Type="PinStringValue" IsLocked="True" SourceModule="Video Recorder" SourcePin="ExactPath" />
 								<Pin Name="Params" Type="PinCollectionValue" IsLocked="True" SourceModule="Copy Collection" SourcePin="In" />
@@ -2187,12 +2104,9 @@
 								<Pin Name="Data Stream" Type="PinDataStreamReferenceValue" IsLocked="True" SourceModule="Data Stream" SourcePin="Sources" />
 							</ExposerOutputPins>
 							<Connections>
-								<Connection FromModule="Subtract" FromPin="Out" ToModule="Data Stream" ToPin="Engine" />
 								<Connection FromModule="Video Recorder" FromPin="OutputPath" ToModule="Data Stream" ToPin="ExactPath" />
 								<Connection FromModule="Copy Text" FromPin="Out" ToModule="Data Stream" ToPin="InputFile" />
 								<Connection FromModule="If 4" FromPin="Out" ToModule="Data Stream" ToPin="State" />
-								<Connection FromModule="Video Recorder" FromPin="Timecode" ToModule="Data Stream" ToPin="RecTimecode" />
-								<Connection FromModule="Sequence Video" FromPin="Timecode" ToModule="Data Stream" ToPin="PlayTimecode" />
 								<Connection FromModule="Copy Video" FromPin="Out" ToModule="Video Recorder" ToPin="Video" />
 								<Connection FromModule="Copy Audio" FromPin="Out" ToModule="Video Recorder" ToPin="Audio1" />
 								<Connection FromModule="Subtract" FromPin="Out" ToModule="Video Recorder" ToPin="Engine" />
@@ -2200,14 +2114,10 @@
 								<Connection FromModule="Collection Text 2" FromPin="Out" ToModule="Video Recorder" ToPin="OutputFile" />
 								<Connection FromModule="Collection Text 3" FromPin="Out" ToModule="Video Recorder" ToPin="OutputSuffix" />
 								<Connection FromModule="Not 4" FromPin="Out" ToModule="Video Recorder" ToPin="KeepInSize" />
-								<Connection FromModule="If Integer" FromPin="Out" ToModule="Video Recorder" ToPin="VideoFormat" />
-								<Connection FromModule="If Scalar" FromPin="Out" ToModule="Video Recorder" ToPin="VideoMbps" />
 								<Connection FromModule="Collection Integer 2" FromPin="Out" ToModule="Video Recorder" ToPin="KeyframeDist" />
-								<Connection FromModule="If Integer 2" FromPin="Out" ToModule="Video Recorder" ToPin="AudioTracks" />
 								<Connection FromModule="Collection Integer 3" FromPin="Out" ToModule="Video Recorder" ToPin="AudioFormat" />
 								<Connection FromModule="Collection Integer 4" FromPin="Out" ToModule="Video Recorder" ToPin="AudioChannels" />
 								<Connection FromModule="Collection Integer 5" FromPin="Out" ToModule="Video Recorder" ToPin="AudioKbps" />
-								<Connection FromModule="If Integer 3" FromPin="Out" ToModule="Video Recorder" ToPin="Timecode" />
 								<Connection FromModule="Equal" FromPin="Out" ToModule="Video Recorder" ToPin="Recording" />
 								<Connection FromModule="If 4" FromPin="Out" ToModule="Equal" ToPin="A" />
 								<Connection FromModule="Equal 2" FromPin="Out" ToModule="If Video" ToPin="If" />
@@ -2233,14 +2143,8 @@
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Logical" ToPin="Collection" />
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Text 4" ToPin="Collection" />
 								<Connection FromModule="Copy Integer 2" FromPin="Out" ToModule="If 4" ToPin="Then" />
-								<Connection FromModule="Collection Logical" FromPin="Out" ToModule="If Integer 3" ToPin="If" />
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Logical 2" ToPin="Collection" />
 								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="Not 4" ToPin="In" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Integer" ToPin="If" />
-								<Connection FromModule="Collection Integer" FromPin="Out" ToModule="If Integer" ToPin="Else" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Integer 2" ToPin="If" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Scalar" ToPin="If" />
-								<Connection FromModule="Collection Scalar" FromPin="Out" ToModule="If Scalar" ToPin="Else" />
 							</Connections>
 						</Module>
 					</Children>
@@ -2292,8 +2196,6 @@
 						<Connection FromModule="INPUT %N" FromPin="Tracking Mode" ToModule="Camera Tracking" ToPin="CameraLens" />
 						<Connection FromModule="INPUT %N" FromPin="Zoom Device" ToModule="Camera Tracking" ToPin="ZoomDevice" />
 						<Connection FromModule="INPUT" FromPin="Open" ToModule="Camera Tracking" ToPin="Receive" />
-						<Connection FromModule="INPUT %N" FromPin="Timecode Sync" ToModule="Camera Tracking" ToPin="TimecodeSync" />
-						<Connection FromModule="INPUT" FromPin="Timecode" ToModule="Camera Tracking" ToPin="RefTimecode" />
 						<Connection FromModule="INPUT %N" FromPin="Tracking Delay" ToModule="Camera Tracking" ToPin="Delay" />
 						<Connection FromModule="INPUT %N" FromPin="Zoom Delay" ToModule="Camera Tracking" ToPin="ZoomDelay" />
 						<Connection FromModule="INPUT %N" FromPin="Manual Lens" ToModule="Camera Tracking" ToPin="ManualLens" />
@@ -2323,10 +2225,6 @@
 						<Connection FromModule="Copy Logical 2" FromPin="Out" ToModule="INPUT" ToPin="#On" />
 						<Connection FromModule="Copy Text 1" FromPin="Out" ToModule="INPUT" ToPin="Camera Device" />
 						<Connection FromModule="INPUT %N" FromPin="Camera Mode" ToModule="INPUT" ToPin="Camera Mode" />
-						<Connection FromModule="INPUT %N" FromPin="Use Audio Device" ToModule="INPUT" ToPin="Use Audio Device" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Device" ToModule="INPUT" ToPin="Audio Device" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Dev Delay" ToModule="INPUT" ToPin="Audio Dev Delay" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Level" ToModule="INPUT" ToPin="Audio Level" />
 						<Connection FromModule="INPUT %N" FromPin="Timecode Master" ToModule="INPUT" ToPin="Timecode Master" />
 						<Connection FromModule="INPUT %N" FromPin="In Color Space" ToModule="INPUT" ToPin="In Color Space" />
 						<Connection FromModule="INPUT %N" FromPin="In Gamma Curve" ToModule="INPUT" ToPin="In Gamma Curve" />
@@ -2339,7 +2237,6 @@
 						<Connection FromModule="Copy Logical 2" FromPin="Out" ToModule="TrkCam_Record" ToPin="#On" />
 						<Connection FromModule="INPUT" FromPin="Video" ToModule="TrkCam_Record" ToPin="Video" />
 						<Connection FromModule="INPUT" FromPin="Audio" ToModule="TrkCam_Record" ToPin="Audio" />
-						<Connection FromModule="INPUT" FromPin="Timecode" ToModule="TrkCam_Record" ToPin="Timecode" />
 						<Connection FromModule="INPUT %N" FromPin="Engine" ToModule="TrkCam_Record" ToPin="Engine" />
 						<Connection FromModule="INPUT %N" FromPin="Timecode Master" ToModule="TrkCam_Record" ToPin="Timecode Master" />
 					</Connections>
@@ -2419,8 +2316,7 @@
 						<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
 						<Pin Name="CenterShift" Type="PinVectorValue" Value="0, 0" />
 						<Pin Name="RadialDistortion" Type="PinVectorValue" Value="0, 0" />
-						<Pin Name="Filter" Type="PinIntValue" Value="pfBicubic" />
-						<Pin Name="CorrAspect" Type="PinBoolValue" Value="True" />
+						<Pin Name="Bicubic" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardBand" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardedSize" Type="PinVectorValue" Value="0, 0" />
 					</PinValues>
@@ -3224,7 +3120,7 @@
 			</Properties>
 			<PinValues>
 				<Pin Name="Active" Type="PinBoolValue" Value="True" />
-				<Pin Name="Selected" Type="PinIntValue" Value="2" />
+				<Pin Name="Selected" Type="PinIntValue" Value="1" />
 				<Pin Name="Video1" Type="PinVideoValue" Value="" />
 				<Pin Name="Video2" Type="PinVideoValue" Value="" />
 				<Pin Name="Video3" Type="PinVideoValue" Value="" />
@@ -3462,7 +3358,7 @@
 			</Properties>
 			<PinValues>
 				<Pin Name="Active" Type="PinBoolValue" Value="True" />
-				<Pin Name="Selected" Type="PinIntValue" Value="0" />
+				<Pin Name="Selected" Type="PinIntValue" Value="1" />
 				<Pin Name="Video1" Type="PinVideoValue" Value="" />
 				<Pin Name="Video2" Type="PinVideoValue" Value="" />
 				<Pin Name="Video3" Type="PinVideoValue" Value="" />
@@ -4517,8 +4413,6 @@
 								<Pin Name="Receive" Type="PinBoolValue" Value="True" />
 								<Pin Name="Immediate" Type="PinBoolValue" Value="False" />
 								<Pin Name="FwdToRemotes" Type="PinBoolValue" Value="False" />
-								<Pin Name="TimecodeSync" Type="PinBoolValue" Value="False" />
-								<Pin Name="RefTimecode" Type="PinIntValue" Value="0" />
 								<Pin Name="Delay" Type="PinDoubleValue" Value="0" />
 								<Pin Name="ZoomDelay" Type="PinDoubleValue" Value="0" />
 								<Pin Name="ManualLens" Type="PinBoolValue" Value="False" />
@@ -4763,14 +4657,14 @@
 							<Properties Color="#E6D8D1" ColorEdited="True" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="INPUT" IsLocked="False">
 								<ExtraData>
 									<item key="Location" type="PointF" value="-442, -599" />
-									<item key="ViewCenter" type="PointF" value="-93.12965, 47.10557" />
+									<item key="ViewCenter" type="PointF" value="-640.3739, 227.9853" />
 									<item key="ZoomFactor" type="Single" value="0.923410356" />
 									<item key="Notes" type="String" value="" />
 									<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
 									<item key="Importer" type="String" value="LinkedCompound" />
 									<item key="ImporterVersion" type="Int32" value="3" />
 									<item key="ImportSourcePath" type="String" value="[Common_Studio]:Compounds\TrackedCam\Elements\TrkCam_Input.xcomp" />
-									<item key="ImportSourceHash" type="String" value="ECE1544D16D5EC94299803CA840F6A55" />
+									<item key="ImportSourceHash" type="String" value="DD374CFBFA39E9A4B2F60BEDE2D9CB7C" />
 								</ExtraData>
 							</Properties>
 							<Children>
@@ -4799,8 +4693,18 @@
 										<Pin Name="Mipmaps" Type="PinBoolValue" Value="False" />
 										<Pin Name="Opacity" Type="PinScalarValue" Value="1" />
 										<Pin Name="NoInputImage" Type="PinVideoValue" Value="" />
-										<Pin Name="DummyOut" Type="PinBoolValue" Value="False" />
 										<Pin Name="EnableLog" Type="PinBoolValue" Value="True" />
+									</PinValues>
+								</Module>
+								<Module Type="And">
+									<Properties Name="Test" IsLocked="False">
+										<ExtraData>
+											<item key="Location" type="PointF" value="-257, 222" />
+										</ExtraData>
+									</Properties>
+									<PinValues>
+										<Pin Name="A" Type="PinBoolValue" Value="False" />
+										<Pin Name="B" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
 								<Module Type="Compound">
@@ -4924,10 +4828,23 @@
 										<Connection FromModule="Format Scalars 1" FromPin="Out" ToModule="► INPUT TECH DATA [1]" ToPin="In" />
 									</Connections>
 								</Module>
+								<Module Type="IfVideo">
+									<Properties Name="If Video" IsLocked="False">
+										<ExtraData>
+											<item key="Location" type="PointF" value="434, -80" />
+										</ExtraData>
+									</Properties>
+									<PinValues>
+										<Pin Name="If" Type="PinBoolValue" Value="False" />
+										<Pin Name="Then" Type="PinVideoValue" Value="" />
+										<Pin Name="Else" Type="PinVideoValue" Value="" />
+										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
+									</PinValues>
+								</Module>
 								<Module Type="CopyInteger">
 									<Properties Name="Copy Integer" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-1076, 197" />
+											<item key="Location" type="PointF" value="-1237, 417" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -4939,7 +4856,7 @@
 								<Module Type="CopyInteger">
 									<Properties Name="Copy Integer 2" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-1083, 282" />
+											<item key="Location" type="PointF" value="-1244, 502" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -4951,7 +4868,7 @@
 								<Module Type="Equal">
 									<Properties Name="Equal" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-860, 287" />
+											<item key="Location" type="PointF" value="-1021, 507" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -4962,7 +4879,7 @@
 								<Module Type="CopyLogical">
 									<Properties Name="On" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-913, 112" />
+											<item key="Location" type="PointF" value="-804, 207" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -5000,97 +4917,44 @@
 										<Pin Name="Default" Type="PinScalarValue" Value="0" />
 									</PinValues>
 								</Module>
-								<Module Type="AudioInput">
-									<Properties Name="Audio Input" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-61, -29" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Device" Type="PinStringValue" Value="DirectSound: Primary Sound Capture Driver" />
-										<Pin Name="Open" Type="PinBoolValue" Value="True" />
-									</PinValues>
-								</Module>
-								<Module Type="IfAudio">
-									<Properties Name="If Audio" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="139, -167" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="AudioDelayer">
-									<Properties Name="Audio Delayer" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="148, -27" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Delay" Type="PinScalarValue" Value="0" />
-									</PinValues>
-								</Module>
-								<Module Type="AudioFader">
-									<Properties Name="Audio Fader" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="345, -204" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Level" Type="PinScalarValue" Value="0" />
-										<Pin Name="Silence" Type="PinScalarValue" Value="-60" />
-										<Pin Name="Force" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 							</Children>
 							<ExposerInputPins>
 								<Pin Name="Index" Type="PinIntValue" IsLocked="True" SourceModule="Input_Tech_Data 1" SourcePin="Index" />
 								<Pin Name="#On" Type="PinBoolValue" IsLocked="True" SourceModule="On" SourcePin="In" />
+								<Pin Name="#_Test" Type="PinBoolValue" IsLocked="True" SourceModule="Test" SourcePin="B" />
 								<Pin Name="Camera Device" Type="PinStringValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Device" />
 								<Pin Name="Camera Mode" Type="PinStringValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Mode" />
-								<Pin Name="Use Audio Device" Type="PinBoolValue" IsLocked="True" SourceModule="If Audio" SourcePin="If" />
-								<Pin Name="Audio Device" Type="PinStringValue" IsLocked="True" SourceModule="Audio Input" SourcePin="Device" />
-								<Pin Name="Audio Dev Delay" Type="PinScalarValue" IsLocked="True" SourceModule="Audio Delayer" SourcePin="Delay" />
-								<Pin Name="Audio Level" Type="PinScalarValue" IsLocked="True" SourceModule="Audio Fader" SourcePin="Level" />
 								<Pin Name="Timecode Master" Type="PinBoolValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="TimecodeMaster" />
 								<Pin Name="In Color Space" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="InColorSpace" />
 								<Pin Name="In Gamma Curve" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="InGammaCurve" />
 								<Pin Name="Exposure" Type="PinScalarValue" IsLocked="True" SourceModule="Dash Scalar Custom" SourcePin="In" />
 								<Pin Name="Chroma Offset" Type="PinScalarValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="ChromaOffset" />
 								<Pin Name="Camera Delay" Type="PinDoubleValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Delay" />
+								<Pin Name="Test Input" Type="PinVideoValue" IsLocked="True" SourceModule="If Video" SourcePin="Then" />
 								<Pin Name="No Input Image" Type="PinVideoValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="NoInputImage" />
 								<Pin Name="$Enum,Engine,Local,Remote #1,Remote #2,Remote #3,Remote #4" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer" SourcePin="In" />
 								<Pin Name="Cur Engine" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 2" SourcePin="In" />
 							</ExposerInputPins>
 							<ExposerOutputPins>
-								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Out" />
-								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Audio Fader" SourcePin="Out" />
+								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="If Video" SourcePin="Out" />
+								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Audio" />
 								<Pin Name="Open" Type="PinBoolValue" IsLocked="True" SourceModule="And 4" SourcePin="Out" />
 								<Pin Name="Enab Monitor" Type="PinBoolValue" IsLocked="True" SourceModule="Equal" SourcePin="Out" />
-								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Timecode" />
 							</ExposerOutputPins>
 							<Connections>
 								<Connection FromModule="And 4" FromPin="Out" ToModule="Video Input 1" ToPin="Open" />
 								<Connection FromModule="Dash Scalar Custom" FromPin="Out" ToModule="Video Input 1" ToPin="Exposure" />
+								<Connection FromModule="On" FromPin="Out" ToModule="Test" ToPin="A" />
 								<Connection FromModule="Video Input 1" FromPin="TimeDelta" ToModule="Input_Tech_Data 1" ToPin="Time Delta" />
 								<Connection FromModule="Video Input 1" FromPin="SyncDelta" ToModule="Input_Tech_Data 1" ToPin="Sync Delta" />
 								<Connection FromModule="Video Input 1" FromPin="SyncBufLevel" ToModule="Input_Tech_Data 1" ToPin="Sync Buf Level" />
 								<Connection FromModule="Video Input 1" FromPin="HWBufLevel" ToModule="Input_Tech_Data 1" ToPin="HW Buf Level" />
+								<Connection FromModule="Test" FromPin="Out" ToModule="If Video" ToPin="If" />
+								<Connection FromModule="Video Input 1" FromPin="Out" ToModule="If Video" ToPin="Else" />
 								<Connection FromModule="Copy Integer" FromPin="Out" ToModule="Equal" ToPin="A" />
 								<Connection FromModule="Copy Integer 2" FromPin="Out" ToModule="Equal" ToPin="B" />
 								<Connection FromModule="On" FromPin="Out" ToModule="And 4" ToPin="A" />
 								<Connection FromModule="Equal" FromPin="Out" ToModule="And 4" ToPin="B" />
-								<Connection FromModule="Audio Delayer" FromPin="Out" ToModule="If Audio" ToPin="Then" />
-								<Connection FromModule="Video Input 1" FromPin="Audio" ToModule="If Audio" ToPin="Else" />
-								<Connection FromModule="Audio Input" FromPin="Out" ToModule="Audio Delayer" ToPin="Audio" />
-								<Connection FromModule="If Audio" FromPin="Out" ToModule="Audio Fader" ToPin="Audio" />
 							</Connections>
 						</Module>
 						<Module Type="If">
@@ -5128,14 +4992,17 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="Engine" Type="PinIntValue" Value="engLocal" />
 										<Pin Name="OutputFolder" Type="PinStringValue" Value="" />
 										<Pin Name="OutputFile" Type="PinStringValue" Value="" />
 										<Pin Name="AutoNumbering" Type="PinBoolValue" Value="True" />
 										<Pin Name="ExactPath" Type="PinStringValue" Value="" />
 										<Pin Name="OutputSuffix" Type="PinStringValue" Value="" />
 										<Pin Name="InputFile" Type="PinStringValue" Value="" />
+										<Pin Name="Cursor" Type="PinDoubleValue" Value="0" />
+										<Pin Name="Offset" Type="PinDoubleValue" Value="0" />
 										<Pin Name="State" Type="PinIntValue" Value="dssIdle" />
+										<Pin Name="Speed" Type="PinScalarValue" Value="1" />
+										<Pin Name="Looping" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
 								<Module Type="VideoRecorder">
@@ -5181,6 +5048,7 @@
 										<Pin Name="AudioChannels" Type="PinIntValue" Value="aclStereo" />
 										<Pin Name="AudioKbps" Type="PinIntValue" Value="vrabr256" />
 										<Pin Name="UseMasterTC" Type="PinBoolValue" Value="False" />
+										<Pin Name="Timecode" Type="PinIntValue" Value="0" />
 									</PinValues>
 								</Module>
 								<Module Type="Equal">
@@ -5331,7 +5199,6 @@
 										<Pin Name="Buffered" Type="PinBoolValue" Value="False" />
 										<Pin Name="BufferMin" Type="PinIntValue" Value="0" />
 										<Pin Name="BufferMax" Type="PinIntValue" Value="2" />
-										<Pin Name="DummyOut" Type="PinBoolValue" Value="False" />
 										<Pin Name="ManualTime" Type="PinDoubleValue" Value="0" />
 										<Pin Name="StartTime" Type="PinDoubleValue" Value="0" />
 										<Pin Name="Speed" Type="PinScalarValue" Value="1" />
@@ -5506,19 +5373,6 @@
 										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer 3" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1918, 1272" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="0" />
-										<Pin Name="Else" Type="PinIntValue" Value="-1" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 								<Module Type="CollectionLogical">
 									<Properties Name="Collection Logical 2" IsLocked="False">
 										<ExtraData>
@@ -5541,55 +5395,13 @@
 										<Pin Name="In" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1902, 838" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="5" />
-										<Pin Name="Else" Type="PinIntValue" Value="0" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer 2" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1912, 1034" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="0" />
-										<Pin Name="Else" Type="PinIntValue" Value="1" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="IfScalar">
-									<Properties Name="If Scalar" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1906, 936" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinScalarValue" Value="0.1" />
-										<Pin Name="Else" Type="PinScalarValue" Value="0" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 							</Children>
 							<ExposerInputPins>
 								<Pin Name="#On" Type="PinBoolValue" IsLocked="True" SourceModule="If 4" SourcePin="If" />
 								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="Copy Video" SourcePin="Video" />
 								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Copy Audio" SourcePin="In" />
 								<Pin Name="State" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 2" SourcePin="In" />
-								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" SourceModule="If Integer 3" SourcePin="Then" />
+								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" />
 								<Pin Name="Engine" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 4" SourcePin="In" />
 								<Pin Name="Exact Path" Type="PinStringValue" IsLocked="True" SourceModule="Video Recorder" SourcePin="ExactPath" />
 								<Pin Name="Params" Type="PinCollectionValue" IsLocked="True" SourceModule="Copy Collection" SourcePin="In" />
@@ -5603,12 +5415,9 @@
 								<Pin Name="Data Stream" Type="PinDataStreamReferenceValue" IsLocked="True" SourceModule="Data Stream" SourcePin="Sources" />
 							</ExposerOutputPins>
 							<Connections>
-								<Connection FromModule="Subtract" FromPin="Out" ToModule="Data Stream" ToPin="Engine" />
 								<Connection FromModule="Video Recorder" FromPin="OutputPath" ToModule="Data Stream" ToPin="ExactPath" />
 								<Connection FromModule="Copy Text" FromPin="Out" ToModule="Data Stream" ToPin="InputFile" />
 								<Connection FromModule="If 4" FromPin="Out" ToModule="Data Stream" ToPin="State" />
-								<Connection FromModule="Video Recorder" FromPin="Timecode" ToModule="Data Stream" ToPin="RecTimecode" />
-								<Connection FromModule="Sequence Video" FromPin="Timecode" ToModule="Data Stream" ToPin="PlayTimecode" />
 								<Connection FromModule="Copy Video" FromPin="Out" ToModule="Video Recorder" ToPin="Video" />
 								<Connection FromModule="Copy Audio" FromPin="Out" ToModule="Video Recorder" ToPin="Audio1" />
 								<Connection FromModule="Subtract" FromPin="Out" ToModule="Video Recorder" ToPin="Engine" />
@@ -5616,14 +5425,10 @@
 								<Connection FromModule="Collection Text 2" FromPin="Out" ToModule="Video Recorder" ToPin="OutputFile" />
 								<Connection FromModule="Collection Text 3" FromPin="Out" ToModule="Video Recorder" ToPin="OutputSuffix" />
 								<Connection FromModule="Not 4" FromPin="Out" ToModule="Video Recorder" ToPin="KeepInSize" />
-								<Connection FromModule="If Integer" FromPin="Out" ToModule="Video Recorder" ToPin="VideoFormat" />
-								<Connection FromModule="If Scalar" FromPin="Out" ToModule="Video Recorder" ToPin="VideoMbps" />
 								<Connection FromModule="Collection Integer 2" FromPin="Out" ToModule="Video Recorder" ToPin="KeyframeDist" />
-								<Connection FromModule="If Integer 2" FromPin="Out" ToModule="Video Recorder" ToPin="AudioTracks" />
 								<Connection FromModule="Collection Integer 3" FromPin="Out" ToModule="Video Recorder" ToPin="AudioFormat" />
 								<Connection FromModule="Collection Integer 4" FromPin="Out" ToModule="Video Recorder" ToPin="AudioChannels" />
 								<Connection FromModule="Collection Integer 5" FromPin="Out" ToModule="Video Recorder" ToPin="AudioKbps" />
-								<Connection FromModule="If Integer 3" FromPin="Out" ToModule="Video Recorder" ToPin="Timecode" />
 								<Connection FromModule="Equal" FromPin="Out" ToModule="Video Recorder" ToPin="Recording" />
 								<Connection FromModule="If 4" FromPin="Out" ToModule="Equal" ToPin="A" />
 								<Connection FromModule="Equal 2" FromPin="Out" ToModule="If Video" ToPin="If" />
@@ -5649,14 +5454,8 @@
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Logical" ToPin="Collection" />
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Text 4" ToPin="Collection" />
 								<Connection FromModule="Copy Integer 2" FromPin="Out" ToModule="If 4" ToPin="Then" />
-								<Connection FromModule="Collection Logical" FromPin="Out" ToModule="If Integer 3" ToPin="If" />
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Logical 2" ToPin="Collection" />
 								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="Not 4" ToPin="In" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Integer" ToPin="If" />
-								<Connection FromModule="Collection Integer" FromPin="Out" ToModule="If Integer" ToPin="Else" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Integer 2" ToPin="If" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Scalar" ToPin="If" />
-								<Connection FromModule="Collection Scalar" FromPin="Out" ToModule="If Scalar" ToPin="Else" />
 							</Connections>
 						</Module>
 					</Children>
@@ -5708,8 +5507,6 @@
 						<Connection FromModule="INPUT %N" FromPin="Tracking Mode" ToModule="Camera Tracking" ToPin="CameraLens" />
 						<Connection FromModule="INPUT %N" FromPin="Zoom Device" ToModule="Camera Tracking" ToPin="ZoomDevice" />
 						<Connection FromModule="INPUT" FromPin="Open" ToModule="Camera Tracking" ToPin="Receive" />
-						<Connection FromModule="INPUT %N" FromPin="Timecode Sync" ToModule="Camera Tracking" ToPin="TimecodeSync" />
-						<Connection FromModule="INPUT" FromPin="Timecode" ToModule="Camera Tracking" ToPin="RefTimecode" />
 						<Connection FromModule="INPUT %N" FromPin="Tracking Delay" ToModule="Camera Tracking" ToPin="Delay" />
 						<Connection FromModule="INPUT %N" FromPin="Zoom Delay" ToModule="Camera Tracking" ToPin="ZoomDelay" />
 						<Connection FromModule="INPUT %N" FromPin="Manual Lens" ToModule="Camera Tracking" ToPin="ManualLens" />
@@ -5739,10 +5536,6 @@
 						<Connection FromModule="Copy Logical 2" FromPin="Out" ToModule="INPUT" ToPin="#On" />
 						<Connection FromModule="Copy Text 1" FromPin="Out" ToModule="INPUT" ToPin="Camera Device" />
 						<Connection FromModule="INPUT %N" FromPin="Camera Mode" ToModule="INPUT" ToPin="Camera Mode" />
-						<Connection FromModule="INPUT %N" FromPin="Use Audio Device" ToModule="INPUT" ToPin="Use Audio Device" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Device" ToModule="INPUT" ToPin="Audio Device" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Dev Delay" ToModule="INPUT" ToPin="Audio Dev Delay" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Level" ToModule="INPUT" ToPin="Audio Level" />
 						<Connection FromModule="INPUT %N" FromPin="Timecode Master" ToModule="INPUT" ToPin="Timecode Master" />
 						<Connection FromModule="INPUT %N" FromPin="In Color Space" ToModule="INPUT" ToPin="In Color Space" />
 						<Connection FromModule="INPUT %N" FromPin="In Gamma Curve" ToModule="INPUT" ToPin="In Gamma Curve" />
@@ -5755,7 +5548,6 @@
 						<Connection FromModule="Copy Logical 2" FromPin="Out" ToModule="TrkCam_Record" ToPin="#On" />
 						<Connection FromModule="INPUT" FromPin="Video" ToModule="TrkCam_Record" ToPin="Video" />
 						<Connection FromModule="INPUT" FromPin="Audio" ToModule="TrkCam_Record" ToPin="Audio" />
-						<Connection FromModule="INPUT" FromPin="Timecode" ToModule="TrkCam_Record" ToPin="Timecode" />
 						<Connection FromModule="INPUT %N" FromPin="Engine" ToModule="TrkCam_Record" ToPin="Engine" />
 						<Connection FromModule="INPUT %N" FromPin="Timecode Master" ToModule="TrkCam_Record" ToPin="Timecode Master" />
 					</Connections>
@@ -5835,8 +5627,7 @@
 						<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
 						<Pin Name="CenterShift" Type="PinVectorValue" Value="0, 0" />
 						<Pin Name="RadialDistortion" Type="PinVectorValue" Value="0, 0" />
-						<Pin Name="Filter" Type="PinIntValue" Value="pfBicubic" />
-						<Pin Name="CorrAspect" Type="PinBoolValue" Value="True" />
+						<Pin Name="Bicubic" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardBand" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardedSize" Type="PinVectorValue" Value="0, 0" />
 					</PinValues>
@@ -6291,9 +6082,9 @@
 					<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="Measure" IsLocked="False">
 						<ExtraData>
 							<item key="Importer" type="String" value="ModularShader" />
-							<item key="ImporterVersion" type="Int32" value="131" />
+							<item key="ImporterVersion" type="Int32" value="129" />
 							<item key="ImportSourcePath" type="String" value="[Common]:Shaders\Special\Measure.xshad" />
-							<item key="ImportSourceHash" type="String" value="3F242A21A1C68F51ED6912EF6D46CE3C" />
+							<item key="ImportSourceHash" type="String" value="1092295CD4CEB0476149722B49669ED6" />
 							<item key="Location" type="PointF" value="-1636, 294" />
 						</ExtraData>
 					</Properties>
@@ -6402,7 +6193,6 @@
 						<Pin Name="Depth Write" Type="PinBoolValue" IsLocked="True" SourceModule="Shader" SourcePin="DepthWrite" />
 						<Pin Name="Luminosity Color" Type="PinColorValue" IsLocked="True" SourceModule="Shader" SourcePin="Color1" />
 						<Pin Name="Opacity" Type="PinScalarValue" IsLocked="True" SourceModule="Shader" SourcePin="Scalar1" />
-						<Pin Name="Base Offset" Type="PinVectorValue" IsLocked="True" SourceModule="Shader" SourcePin="Vector1" />
 						<Pin Name="Transform" Type="PinTransformationValue" IsLocked="True" SourceModule="Shader" SourcePin="Transformation1" />
 						<Pin Name="Color Map" Type="PinVideoValue" IsLocked="True" SourceModule="Shader" SourcePin="Texture1" />
 						<Pin Name="Highlight Color" Type="PinColorValue" IsLocked="True" SourceModule="Shader" SourcePin="Color2" />
@@ -6478,9 +6268,9 @@
 					<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="Measure 2" IsLocked="False">
 						<ExtraData>
 							<item key="Importer" type="String" value="ModularShader" />
-							<item key="ImporterVersion" type="Int32" value="131" />
+							<item key="ImporterVersion" type="Int32" value="129" />
 							<item key="ImportSourcePath" type="String" value="[Common]:Shaders\Special\Measure.xshad" />
-							<item key="ImportSourceHash" type="String" value="3F242A21A1C68F51ED6912EF6D46CE3C" />
+							<item key="ImportSourceHash" type="String" value="1092295CD4CEB0476149722B49669ED6" />
 							<item key="Location" type="PointF" value="-1168.199, 228.3362" />
 						</ExtraData>
 					</Properties>
@@ -6589,7 +6379,6 @@
 						<Pin Name="Depth Write" Type="PinBoolValue" IsLocked="True" SourceModule="Shader" SourcePin="DepthWrite" />
 						<Pin Name="Luminosity Color" Type="PinColorValue" IsLocked="True" SourceModule="Shader" SourcePin="Color1" />
 						<Pin Name="Opacity" Type="PinScalarValue" IsLocked="True" SourceModule="Shader" SourcePin="Scalar1" />
-						<Pin Name="Base Offset" Type="PinVectorValue" IsLocked="True" SourceModule="Shader" SourcePin="Vector1" />
 						<Pin Name="Transform" Type="PinTransformationValue" IsLocked="True" SourceModule="Shader" SourcePin="Transformation1" />
 						<Pin Name="Color Map" Type="PinVideoValue" IsLocked="True" SourceModule="Shader" SourcePin="Texture1" />
 						<Pin Name="Highlight Color" Type="PinColorValue" IsLocked="True" SourceModule="Shader" SourcePin="Color2" />
@@ -6665,9 +6454,9 @@
 					<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="Measure 3" IsLocked="False">
 						<ExtraData>
 							<item key="Importer" type="String" value="ModularShader" />
-							<item key="ImporterVersion" type="Int32" value="131" />
+							<item key="ImporterVersion" type="Int32" value="129" />
 							<item key="ImportSourcePath" type="String" value="[Common]:Shaders\Special\Measure.xshad" />
-							<item key="ImportSourceHash" type="String" value="3F242A21A1C68F51ED6912EF6D46CE3C" />
+							<item key="ImportSourceHash" type="String" value="1092295CD4CEB0476149722B49669ED6" />
 							<item key="Location" type="PointF" value="-1174.199, 568.3362" />
 						</ExtraData>
 					</Properties>
@@ -6776,7 +6565,6 @@
 						<Pin Name="Depth Write" Type="PinBoolValue" IsLocked="True" SourceModule="Shader" SourcePin="DepthWrite" />
 						<Pin Name="Luminosity Color" Type="PinColorValue" IsLocked="True" SourceModule="Shader" SourcePin="Color1" />
 						<Pin Name="Opacity" Type="PinScalarValue" IsLocked="True" SourceModule="Shader" SourcePin="Scalar1" />
-						<Pin Name="Base Offset" Type="PinVectorValue" IsLocked="True" SourceModule="Shader" SourcePin="Vector1" />
 						<Pin Name="Transform" Type="PinTransformationValue" IsLocked="True" SourceModule="Shader" SourcePin="Transformation1" />
 						<Pin Name="Color Map" Type="PinVideoValue" IsLocked="True" SourceModule="Shader" SourcePin="Texture1" />
 						<Pin Name="Highlight Color" Type="PinColorValue" IsLocked="True" SourceModule="Shader" SourcePin="Color2" />
@@ -6974,9 +6762,9 @@
 					<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="Measure 4" IsLocked="False">
 						<ExtraData>
 							<item key="Importer" type="String" value="ModularShader" />
-							<item key="ImporterVersion" type="Int32" value="131" />
+							<item key="ImporterVersion" type="Int32" value="129" />
 							<item key="ImportSourcePath" type="String" value="[Common]:Shaders\Special\Measure.xshad" />
-							<item key="ImportSourceHash" type="String" value="3F242A21A1C68F51ED6912EF6D46CE3C" />
+							<item key="ImportSourceHash" type="String" value="1092295CD4CEB0476149722B49669ED6" />
 							<item key="Location" type="PointF" value="-1173, 1007" />
 						</ExtraData>
 					</Properties>
@@ -7085,7 +6873,6 @@
 						<Pin Name="Depth Write" Type="PinBoolValue" IsLocked="True" SourceModule="Shader" SourcePin="DepthWrite" />
 						<Pin Name="Luminosity Color" Type="PinColorValue" IsLocked="True" SourceModule="Shader" SourcePin="Color1" />
 						<Pin Name="Opacity" Type="PinScalarValue" IsLocked="True" SourceModule="Shader" SourcePin="Scalar1" />
-						<Pin Name="Base Offset" Type="PinVectorValue" IsLocked="True" SourceModule="Shader" SourcePin="Vector1" />
 						<Pin Name="Transform" Type="PinTransformationValue" IsLocked="True" SourceModule="Shader" SourcePin="Transformation1" />
 						<Pin Name="Color Map" Type="PinVideoValue" IsLocked="True" SourceModule="Shader" SourcePin="Texture1" />
 						<Pin Name="Highlight Color" Type="PinColorValue" IsLocked="True" SourceModule="Shader" SourcePin="Color2" />
@@ -7279,7 +7066,7 @@
 				</ExtraData>
 			</Properties>
 			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="0" />
+				<Pin Name="Selected" Type="PinIntValue" Value="1" />
 				<Pin Name="Value1" Type="PinVectorValue" Value="" />
 				<Pin Name="Value2" Type="PinVectorValue" Value="" />
 				<Pin Name="Value3" Type="PinVectorValue" Value="" />
@@ -7497,8 +7284,7 @@
 						<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
 						<Pin Name="CenterShift" Type="PinVectorValue" Value="0, 0" />
 						<Pin Name="RadialDistortion" Type="PinVectorValue" Value="0, 0" />
-						<Pin Name="Filter" Type="PinIntValue" Value="pfBicubic" />
-						<Pin Name="CorrAspect" Type="PinBoolValue" Value="True" />
+						<Pin Name="Bicubic" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardBand" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardedSize" Type="PinVectorValue" Value="0, 0" />
 					</PinValues>
@@ -7736,8 +7522,7 @@
 						<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
 						<Pin Name="CenterShift" Type="PinVectorValue" Value="0, 0" />
 						<Pin Name="RadialDistortion" Type="PinVectorValue" Value="0, 0" />
-						<Pin Name="Filter" Type="PinIntValue" Value="pfBicubic" />
-						<Pin Name="CorrAspect" Type="PinBoolValue" Value="True" />
+						<Pin Name="Bicubic" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardBand" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardedSize" Type="PinVectorValue" Value="0, 0" />
 					</PinValues>
@@ -7940,8 +7725,7 @@
 						<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
 						<Pin Name="CenterShift" Type="PinVectorValue" Value="0, 0" />
 						<Pin Name="RadialDistortion" Type="PinVectorValue" Value="0, 0" />
-						<Pin Name="Filter" Type="PinIntValue" Value="pfBicubic" />
-						<Pin Name="CorrAspect" Type="PinBoolValue" Value="True" />
+						<Pin Name="Bicubic" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardBand" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardedSize" Type="PinVectorValue" Value="0, 0" />
 					</PinValues>
@@ -8156,8 +7940,7 @@
 						<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
 						<Pin Name="CenterShift" Type="PinVectorValue" Value="0, 0" />
 						<Pin Name="RadialDistortion" Type="PinVectorValue" Value="0, 0" />
-						<Pin Name="Filter" Type="PinIntValue" Value="pfBicubic" />
-						<Pin Name="CorrAspect" Type="PinBoolValue" Value="True" />
+						<Pin Name="Bicubic" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardBand" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardedSize" Type="PinVectorValue" Value="0, 0" />
 					</PinValues>
@@ -11041,14 +10824,14 @@
 						<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 						<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToRight" />
 						<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+						<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="LeftPixel" Type="PinScalarValue" Value="0" />
-						<Pin Name="TopPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+						<Pin Name="TopPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-						<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-						<Pin Name="TopNorm" Type="PinScalarValue" Value="0" />
-						<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-						<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 						<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 						<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 					</PinValues>
@@ -11067,14 +10850,14 @@
 						<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 						<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToLeft" />
 						<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+						<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="LeftPixel" Type="PinScalarValue" Value="0" />
-						<Pin Name="TopPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+						<Pin Name="TopPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-						<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-						<Pin Name="TopNorm" Type="PinScalarValue" Value="0.5" />
-						<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-						<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 						<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 						<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 					</PinValues>
@@ -11093,14 +10876,14 @@
 						<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 						<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToRight" />
 						<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+						<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="LeftPixel" Type="PinScalarValue" Value="0" />
-						<Pin Name="TopPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+						<Pin Name="TopPixel" Type="PinScalarValue" Value="0" />
+						<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 						<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-						<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-						<Pin Name="TopNorm" Type="PinScalarValue" Value="0.5" />
-						<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-						<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 						<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 						<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 					</PinValues>
@@ -12469,8 +12252,6 @@
 								<Pin Name="Receive" Type="PinBoolValue" Value="True" />
 								<Pin Name="Immediate" Type="PinBoolValue" Value="False" />
 								<Pin Name="FwdToRemotes" Type="PinBoolValue" Value="False" />
-								<Pin Name="TimecodeSync" Type="PinBoolValue" Value="False" />
-								<Pin Name="RefTimecode" Type="PinIntValue" Value="0" />
 								<Pin Name="Delay" Type="PinDoubleValue" Value="0" />
 								<Pin Name="ZoomDelay" Type="PinDoubleValue" Value="0" />
 								<Pin Name="ManualLens" Type="PinBoolValue" Value="False" />
@@ -12715,14 +12496,14 @@
 							<Properties Color="#E6D8D1" ColorEdited="True" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="INPUT" IsLocked="False">
 								<ExtraData>
 									<item key="Location" type="PointF" value="-442, -599" />
-									<item key="ViewCenter" type="PointF" value="-93.12965, 47.10557" />
+									<item key="ViewCenter" type="PointF" value="-640.3739, 227.9853" />
 									<item key="ZoomFactor" type="Single" value="0.923410356" />
 									<item key="Notes" type="String" value="" />
 									<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
 									<item key="Importer" type="String" value="LinkedCompound" />
 									<item key="ImporterVersion" type="Int32" value="3" />
 									<item key="ImportSourcePath" type="String" value="[Common_Studio]:Compounds\TrackedCam\Elements\TrkCam_Input.xcomp" />
-									<item key="ImportSourceHash" type="String" value="ECE1544D16D5EC94299803CA840F6A55" />
+									<item key="ImportSourceHash" type="String" value="DD374CFBFA39E9A4B2F60BEDE2D9CB7C" />
 								</ExtraData>
 							</Properties>
 							<Children>
@@ -12751,8 +12532,18 @@
 										<Pin Name="Mipmaps" Type="PinBoolValue" Value="False" />
 										<Pin Name="Opacity" Type="PinScalarValue" Value="1" />
 										<Pin Name="NoInputImage" Type="PinVideoValue" Value="" />
-										<Pin Name="DummyOut" Type="PinBoolValue" Value="False" />
 										<Pin Name="EnableLog" Type="PinBoolValue" Value="True" />
+									</PinValues>
+								</Module>
+								<Module Type="And">
+									<Properties Name="Test" IsLocked="False">
+										<ExtraData>
+											<item key="Location" type="PointF" value="-257, 222" />
+										</ExtraData>
+									</Properties>
+									<PinValues>
+										<Pin Name="A" Type="PinBoolValue" Value="False" />
+										<Pin Name="B" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
 								<Module Type="Compound">
@@ -12876,10 +12667,23 @@
 										<Connection FromModule="Format Scalars 1" FromPin="Out" ToModule="► INPUT TECH DATA [1]" ToPin="In" />
 									</Connections>
 								</Module>
+								<Module Type="IfVideo">
+									<Properties Name="If Video" IsLocked="False">
+										<ExtraData>
+											<item key="Location" type="PointF" value="434, -80" />
+										</ExtraData>
+									</Properties>
+									<PinValues>
+										<Pin Name="If" Type="PinBoolValue" Value="False" />
+										<Pin Name="Then" Type="PinVideoValue" Value="" />
+										<Pin Name="Else" Type="PinVideoValue" Value="" />
+										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
+									</PinValues>
+								</Module>
 								<Module Type="CopyInteger">
 									<Properties Name="Copy Integer" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-1076, 197" />
+											<item key="Location" type="PointF" value="-1237, 417" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -12891,7 +12695,7 @@
 								<Module Type="CopyInteger">
 									<Properties Name="Copy Integer 2" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-1083, 282" />
+											<item key="Location" type="PointF" value="-1244, 502" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -12903,7 +12707,7 @@
 								<Module Type="Equal">
 									<Properties Name="Equal" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-860, 287" />
+											<item key="Location" type="PointF" value="-1021, 507" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -12914,7 +12718,7 @@
 								<Module Type="CopyLogical">
 									<Properties Name="On" IsLocked="False">
 										<ExtraData>
-											<item key="Location" type="PointF" value="-913, 112" />
+											<item key="Location" type="PointF" value="-804, 207" />
 										</ExtraData>
 									</Properties>
 									<PinValues>
@@ -12952,97 +12756,44 @@
 										<Pin Name="Default" Type="PinScalarValue" Value="0" />
 									</PinValues>
 								</Module>
-								<Module Type="AudioInput">
-									<Properties Name="Audio Input" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-61, -29" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Device" Type="PinStringValue" Value="DirectSound: Primary Sound Capture Driver" />
-										<Pin Name="Open" Type="PinBoolValue" Value="True" />
-									</PinValues>
-								</Module>
-								<Module Type="IfAudio">
-									<Properties Name="If Audio" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="139, -167" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="AudioDelayer">
-									<Properties Name="Audio Delayer" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="148, -27" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="AllPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Delay" Type="PinScalarValue" Value="0" />
-									</PinValues>
-								</Module>
-								<Module Type="AudioFader">
-									<Properties Name="Audio Fader" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="345, -204" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="Active" Type="PinBoolValue" Value="True" />
-										<Pin Name="Level" Type="PinScalarValue" Value="0" />
-										<Pin Name="Silence" Type="PinScalarValue" Value="-60" />
-										<Pin Name="Force" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 							</Children>
 							<ExposerInputPins>
 								<Pin Name="Index" Type="PinIntValue" IsLocked="True" SourceModule="Input_Tech_Data 1" SourcePin="Index" />
 								<Pin Name="#On" Type="PinBoolValue" IsLocked="True" SourceModule="On" SourcePin="In" />
+								<Pin Name="#_Test" Type="PinBoolValue" IsLocked="True" SourceModule="Test" SourcePin="B" />
 								<Pin Name="Camera Device" Type="PinStringValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Device" />
 								<Pin Name="Camera Mode" Type="PinStringValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Mode" />
-								<Pin Name="Use Audio Device" Type="PinBoolValue" IsLocked="True" SourceModule="If Audio" SourcePin="If" />
-								<Pin Name="Audio Device" Type="PinStringValue" IsLocked="True" SourceModule="Audio Input" SourcePin="Device" />
-								<Pin Name="Audio Dev Delay" Type="PinScalarValue" IsLocked="True" SourceModule="Audio Delayer" SourcePin="Delay" />
-								<Pin Name="Audio Level" Type="PinScalarValue" IsLocked="True" SourceModule="Audio Fader" SourcePin="Level" />
 								<Pin Name="Timecode Master" Type="PinBoolValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="TimecodeMaster" />
 								<Pin Name="In Color Space" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="InColorSpace" />
 								<Pin Name="In Gamma Curve" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="InGammaCurve" />
 								<Pin Name="Exposure" Type="PinScalarValue" IsLocked="True" SourceModule="Dash Scalar Custom" SourcePin="In" />
 								<Pin Name="Chroma Offset" Type="PinScalarValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="ChromaOffset" />
 								<Pin Name="Camera Delay" Type="PinDoubleValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Delay" />
+								<Pin Name="Test Input" Type="PinVideoValue" IsLocked="True" SourceModule="If Video" SourcePin="Then" />
 								<Pin Name="No Input Image" Type="PinVideoValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="NoInputImage" />
 								<Pin Name="$Enum,Engine,Local,Remote #1,Remote #2,Remote #3,Remote #4" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer" SourcePin="In" />
 								<Pin Name="Cur Engine" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 2" SourcePin="In" />
 							</ExposerInputPins>
 							<ExposerOutputPins>
-								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Out" />
-								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Audio Fader" SourcePin="Out" />
+								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="If Video" SourcePin="Out" />
+								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Audio" />
 								<Pin Name="Open" Type="PinBoolValue" IsLocked="True" SourceModule="And 4" SourcePin="Out" />
 								<Pin Name="Enab Monitor" Type="PinBoolValue" IsLocked="True" SourceModule="Equal" SourcePin="Out" />
-								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" SourceModule="Video Input 1" SourcePin="Timecode" />
 							</ExposerOutputPins>
 							<Connections>
 								<Connection FromModule="And 4" FromPin="Out" ToModule="Video Input 1" ToPin="Open" />
 								<Connection FromModule="Dash Scalar Custom" FromPin="Out" ToModule="Video Input 1" ToPin="Exposure" />
+								<Connection FromModule="On" FromPin="Out" ToModule="Test" ToPin="A" />
 								<Connection FromModule="Video Input 1" FromPin="TimeDelta" ToModule="Input_Tech_Data 1" ToPin="Time Delta" />
 								<Connection FromModule="Video Input 1" FromPin="SyncDelta" ToModule="Input_Tech_Data 1" ToPin="Sync Delta" />
 								<Connection FromModule="Video Input 1" FromPin="SyncBufLevel" ToModule="Input_Tech_Data 1" ToPin="Sync Buf Level" />
 								<Connection FromModule="Video Input 1" FromPin="HWBufLevel" ToModule="Input_Tech_Data 1" ToPin="HW Buf Level" />
+								<Connection FromModule="Test" FromPin="Out" ToModule="If Video" ToPin="If" />
+								<Connection FromModule="Video Input 1" FromPin="Out" ToModule="If Video" ToPin="Else" />
 								<Connection FromModule="Copy Integer" FromPin="Out" ToModule="Equal" ToPin="A" />
 								<Connection FromModule="Copy Integer 2" FromPin="Out" ToModule="Equal" ToPin="B" />
 								<Connection FromModule="On" FromPin="Out" ToModule="And 4" ToPin="A" />
 								<Connection FromModule="Equal" FromPin="Out" ToModule="And 4" ToPin="B" />
-								<Connection FromModule="Audio Delayer" FromPin="Out" ToModule="If Audio" ToPin="Then" />
-								<Connection FromModule="Video Input 1" FromPin="Audio" ToModule="If Audio" ToPin="Else" />
-								<Connection FromModule="Audio Input" FromPin="Out" ToModule="Audio Delayer" ToPin="Audio" />
-								<Connection FromModule="If Audio" FromPin="Out" ToModule="Audio Fader" ToPin="Audio" />
 							</Connections>
 						</Module>
 						<Module Type="If">
@@ -13080,14 +12831,17 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="Engine" Type="PinIntValue" Value="engLocal" />
 										<Pin Name="OutputFolder" Type="PinStringValue" Value="" />
 										<Pin Name="OutputFile" Type="PinStringValue" Value="" />
 										<Pin Name="AutoNumbering" Type="PinBoolValue" Value="True" />
 										<Pin Name="ExactPath" Type="PinStringValue" Value="" />
 										<Pin Name="OutputSuffix" Type="PinStringValue" Value="" />
 										<Pin Name="InputFile" Type="PinStringValue" Value="" />
+										<Pin Name="Cursor" Type="PinDoubleValue" Value="0" />
+										<Pin Name="Offset" Type="PinDoubleValue" Value="0" />
 										<Pin Name="State" Type="PinIntValue" Value="dssIdle" />
+										<Pin Name="Speed" Type="PinScalarValue" Value="1" />
+										<Pin Name="Looping" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
 								<Module Type="VideoRecorder">
@@ -13133,6 +12887,7 @@
 										<Pin Name="AudioChannels" Type="PinIntValue" Value="aclStereo" />
 										<Pin Name="AudioKbps" Type="PinIntValue" Value="vrabr256" />
 										<Pin Name="UseMasterTC" Type="PinBoolValue" Value="False" />
+										<Pin Name="Timecode" Type="PinIntValue" Value="0" />
 									</PinValues>
 								</Module>
 								<Module Type="Equal">
@@ -13283,7 +13038,6 @@
 										<Pin Name="Buffered" Type="PinBoolValue" Value="False" />
 										<Pin Name="BufferMin" Type="PinIntValue" Value="0" />
 										<Pin Name="BufferMax" Type="PinIntValue" Value="2" />
-										<Pin Name="DummyOut" Type="PinBoolValue" Value="False" />
 										<Pin Name="ManualTime" Type="PinDoubleValue" Value="0" />
 										<Pin Name="StartTime" Type="PinDoubleValue" Value="0" />
 										<Pin Name="Speed" Type="PinScalarValue" Value="1" />
@@ -13458,19 +13212,6 @@
 										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer 3" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1918, 1272" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="0" />
-										<Pin Name="Else" Type="PinIntValue" Value="-1" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 								<Module Type="CollectionLogical">
 									<Properties Name="Collection Logical 2" IsLocked="False">
 										<ExtraData>
@@ -13493,55 +13234,13 @@
 										<Pin Name="In" Type="PinBoolValue" Value="False" />
 									</PinValues>
 								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1902, 838" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="5" />
-										<Pin Name="Else" Type="PinIntValue" Value="0" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="IfInteger">
-									<Properties Name="If Integer 2" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1912, 1034" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinIntValue" Value="0" />
-										<Pin Name="Else" Type="PinIntValue" Value="1" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
-								<Module Type="IfScalar">
-									<Properties Name="If Scalar" IsLocked="False">
-										<ExtraData>
-											<item key="Location" type="PointF" value="-1906, 936" />
-											<item key="DisplayMode" type="FlowNodeDisplayMode" value="PrimaryPins" />
-										</ExtraData>
-									</Properties>
-									<PinValues>
-										<Pin Name="If" Type="PinBoolValue" Value="False" />
-										<Pin Name="Then" Type="PinScalarValue" Value="0.1" />
-										<Pin Name="Else" Type="PinScalarValue" Value="0" />
-										<Pin Name="ForceBoth" Type="PinBoolValue" Value="False" />
-									</PinValues>
-								</Module>
 							</Children>
 							<ExposerInputPins>
 								<Pin Name="#On" Type="PinBoolValue" IsLocked="True" SourceModule="If 4" SourcePin="If" />
 								<Pin Name="Video" Type="PinVideoValue" IsLocked="True" SourceModule="Copy Video" SourcePin="Video" />
 								<Pin Name="Audio" Type="PinAudioValue" IsLocked="True" SourceModule="Copy Audio" SourcePin="In" />
 								<Pin Name="State" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 2" SourcePin="In" />
-								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" SourceModule="If Integer 3" SourcePin="Then" />
+								<Pin Name="Timecode" Type="PinIntValue" IsLocked="True" />
 								<Pin Name="Engine" Type="PinIntValue" IsLocked="True" SourceModule="Copy Integer 4" SourcePin="In" />
 								<Pin Name="Exact Path" Type="PinStringValue" IsLocked="True" SourceModule="Video Recorder" SourcePin="ExactPath" />
 								<Pin Name="Params" Type="PinCollectionValue" IsLocked="True" SourceModule="Copy Collection" SourcePin="In" />
@@ -13555,12 +13254,9 @@
 								<Pin Name="Data Stream" Type="PinDataStreamReferenceValue" IsLocked="True" SourceModule="Data Stream" SourcePin="Sources" />
 							</ExposerOutputPins>
 							<Connections>
-								<Connection FromModule="Subtract" FromPin="Out" ToModule="Data Stream" ToPin="Engine" />
 								<Connection FromModule="Video Recorder" FromPin="OutputPath" ToModule="Data Stream" ToPin="ExactPath" />
 								<Connection FromModule="Copy Text" FromPin="Out" ToModule="Data Stream" ToPin="InputFile" />
 								<Connection FromModule="If 4" FromPin="Out" ToModule="Data Stream" ToPin="State" />
-								<Connection FromModule="Video Recorder" FromPin="Timecode" ToModule="Data Stream" ToPin="RecTimecode" />
-								<Connection FromModule="Sequence Video" FromPin="Timecode" ToModule="Data Stream" ToPin="PlayTimecode" />
 								<Connection FromModule="Copy Video" FromPin="Out" ToModule="Video Recorder" ToPin="Video" />
 								<Connection FromModule="Copy Audio" FromPin="Out" ToModule="Video Recorder" ToPin="Audio1" />
 								<Connection FromModule="Subtract" FromPin="Out" ToModule="Video Recorder" ToPin="Engine" />
@@ -13568,14 +13264,10 @@
 								<Connection FromModule="Collection Text 2" FromPin="Out" ToModule="Video Recorder" ToPin="OutputFile" />
 								<Connection FromModule="Collection Text 3" FromPin="Out" ToModule="Video Recorder" ToPin="OutputSuffix" />
 								<Connection FromModule="Not 4" FromPin="Out" ToModule="Video Recorder" ToPin="KeepInSize" />
-								<Connection FromModule="If Integer" FromPin="Out" ToModule="Video Recorder" ToPin="VideoFormat" />
-								<Connection FromModule="If Scalar" FromPin="Out" ToModule="Video Recorder" ToPin="VideoMbps" />
 								<Connection FromModule="Collection Integer 2" FromPin="Out" ToModule="Video Recorder" ToPin="KeyframeDist" />
-								<Connection FromModule="If Integer 2" FromPin="Out" ToModule="Video Recorder" ToPin="AudioTracks" />
 								<Connection FromModule="Collection Integer 3" FromPin="Out" ToModule="Video Recorder" ToPin="AudioFormat" />
 								<Connection FromModule="Collection Integer 4" FromPin="Out" ToModule="Video Recorder" ToPin="AudioChannels" />
 								<Connection FromModule="Collection Integer 5" FromPin="Out" ToModule="Video Recorder" ToPin="AudioKbps" />
-								<Connection FromModule="If Integer 3" FromPin="Out" ToModule="Video Recorder" ToPin="Timecode" />
 								<Connection FromModule="Equal" FromPin="Out" ToModule="Video Recorder" ToPin="Recording" />
 								<Connection FromModule="If 4" FromPin="Out" ToModule="Equal" ToPin="A" />
 								<Connection FromModule="Equal 2" FromPin="Out" ToModule="If Video" ToPin="If" />
@@ -13601,14 +13293,8 @@
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Logical" ToPin="Collection" />
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Text 4" ToPin="Collection" />
 								<Connection FromModule="Copy Integer 2" FromPin="Out" ToModule="If 4" ToPin="Then" />
-								<Connection FromModule="Collection Logical" FromPin="Out" ToModule="If Integer 3" ToPin="If" />
 								<Connection FromModule="Copy Collection" FromPin="Out" ToModule="Collection Logical 2" ToPin="Collection" />
 								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="Not 4" ToPin="In" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Integer" ToPin="If" />
-								<Connection FromModule="Collection Integer" FromPin="Out" ToModule="If Integer" ToPin="Else" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Integer 2" ToPin="If" />
-								<Connection FromModule="Collection Logical 2" FromPin="Out" ToModule="If Scalar" ToPin="If" />
-								<Connection FromModule="Collection Scalar" FromPin="Out" ToModule="If Scalar" ToPin="Else" />
 							</Connections>
 						</Module>
 					</Children>
@@ -13660,8 +13346,6 @@
 						<Connection FromModule="INPUT %N" FromPin="Tracking Mode" ToModule="Camera Tracking" ToPin="CameraLens" />
 						<Connection FromModule="INPUT %N" FromPin="Zoom Device" ToModule="Camera Tracking" ToPin="ZoomDevice" />
 						<Connection FromModule="INPUT" FromPin="Open" ToModule="Camera Tracking" ToPin="Receive" />
-						<Connection FromModule="INPUT %N" FromPin="Timecode Sync" ToModule="Camera Tracking" ToPin="TimecodeSync" />
-						<Connection FromModule="INPUT" FromPin="Timecode" ToModule="Camera Tracking" ToPin="RefTimecode" />
 						<Connection FromModule="INPUT %N" FromPin="Tracking Delay" ToModule="Camera Tracking" ToPin="Delay" />
 						<Connection FromModule="INPUT %N" FromPin="Zoom Delay" ToModule="Camera Tracking" ToPin="ZoomDelay" />
 						<Connection FromModule="INPUT %N" FromPin="Manual Lens" ToModule="Camera Tracking" ToPin="ManualLens" />
@@ -13691,10 +13375,6 @@
 						<Connection FromModule="Copy Logical 2" FromPin="Out" ToModule="INPUT" ToPin="#On" />
 						<Connection FromModule="Copy Text 1" FromPin="Out" ToModule="INPUT" ToPin="Camera Device" />
 						<Connection FromModule="INPUT %N" FromPin="Camera Mode" ToModule="INPUT" ToPin="Camera Mode" />
-						<Connection FromModule="INPUT %N" FromPin="Use Audio Device" ToModule="INPUT" ToPin="Use Audio Device" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Device" ToModule="INPUT" ToPin="Audio Device" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Dev Delay" ToModule="INPUT" ToPin="Audio Dev Delay" />
-						<Connection FromModule="INPUT %N" FromPin="Audio Level" ToModule="INPUT" ToPin="Audio Level" />
 						<Connection FromModule="INPUT %N" FromPin="Timecode Master" ToModule="INPUT" ToPin="Timecode Master" />
 						<Connection FromModule="INPUT %N" FromPin="In Color Space" ToModule="INPUT" ToPin="In Color Space" />
 						<Connection FromModule="INPUT %N" FromPin="In Gamma Curve" ToModule="INPUT" ToPin="In Gamma Curve" />
@@ -13707,7 +13387,6 @@
 						<Connection FromModule="Copy Logical 2" FromPin="Out" ToModule="TrkCam_Record" ToPin="#On" />
 						<Connection FromModule="INPUT" FromPin="Video" ToModule="TrkCam_Record" ToPin="Video" />
 						<Connection FromModule="INPUT" FromPin="Audio" ToModule="TrkCam_Record" ToPin="Audio" />
-						<Connection FromModule="INPUT" FromPin="Timecode" ToModule="TrkCam_Record" ToPin="Timecode" />
 						<Connection FromModule="INPUT %N" FromPin="Engine" ToModule="TrkCam_Record" ToPin="Engine" />
 						<Connection FromModule="INPUT %N" FromPin="Timecode Master" ToModule="TrkCam_Record" ToPin="Timecode Master" />
 					</Connections>
@@ -13787,8 +13466,7 @@
 						<Pin Name="Aspect" Type="PinScalarValue" Value="0" />
 						<Pin Name="CenterShift" Type="PinVectorValue" Value="0, 0" />
 						<Pin Name="RadialDistortion" Type="PinVectorValue" Value="0, 0" />
-						<Pin Name="Filter" Type="PinIntValue" Value="pfBicubic" />
-						<Pin Name="CorrAspect" Type="PinBoolValue" Value="True" />
+						<Pin Name="Bicubic" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardBand" Type="PinBoolValue" Value="True" />
 						<Pin Name="GuardedSize" Type="PinVectorValue" Value="0, 0" />
 					</PinValues>
@@ -14636,45 +14314,6 @@
 						<Pin Name="Value" Type="PinStringValue" Value="" />
 					</PinValues>
 				</Module>
-				<Module Type="DashFile">
-					<Properties Name="Dash File" IsLocked="False">
-						<ExtraData>
-							<item key="Location" type="PointF" value="-87, 1457" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="File" Type="PinStringValue" Value="" />
-						<Pin Name="AllowedTypes" Type="PinStringValue" Value="Video ImageSeq Image" />
-						<Pin Name="UseDefault" Type="PinBoolValue" Value="False" />
-						<Pin Name="Default" Type="PinStringValue" Value="" />
-					</PinValues>
-				</Module>
-				<Module Type="DashFile">
-					<Properties Name="Dash File 2" IsLocked="False">
-						<ExtraData>
-							<item key="Location" type="PointF" value="-89, 1521" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="File" Type="PinStringValue" Value="" />
-						<Pin Name="AllowedTypes" Type="PinStringValue" Value="Video ImageSeq Image" />
-						<Pin Name="UseDefault" Type="PinBoolValue" Value="False" />
-						<Pin Name="Default" Type="PinStringValue" Value="" />
-					</PinValues>
-				</Module>
-				<Module Type="DashFile">
-					<Properties Name="Dash File 3" IsLocked="False">
-						<ExtraData>
-							<item key="Location" type="PointF" value="-91, 1585" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="File" Type="PinStringValue" Value="" />
-						<Pin Name="AllowedTypes" Type="PinStringValue" Value="Video ImageSeq Image" />
-						<Pin Name="UseDefault" Type="PinBoolValue" Value="False" />
-						<Pin Name="Default" Type="PinStringValue" Value="" />
-					</PinValues>
-				</Module>
 				<Module Type="Compound">
 					<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="REC indicator" IsLocked="False">
 						<ExtraData>
@@ -14768,14 +14407,14 @@
 								<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 								<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToLeft" />
 								<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+								<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="LeftPixel" Type="PinScalarValue" Value="96" />
-								<Pin Name="TopPixel" Type="PinScalarValue" Value="54" />
+								<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopPixel" Type="PinScalarValue" Value="54" />
+								<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-								<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="TopNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 								<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 								<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 							</PinValues>
@@ -14794,14 +14433,14 @@
 								<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 								<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToLeft" />
 								<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+								<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="LeftPixel" Type="PinScalarValue" Value="318" />
-								<Pin Name="TopPixel" Type="PinScalarValue" Value="54" />
+								<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopPixel" Type="PinScalarValue" Value="54" />
+								<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-								<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="TopNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 								<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 								<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 							</PinValues>
@@ -14885,7 +14524,7 @@
 								</ExtraData>
 							</Properties>
 							<PinValues>
-								<Pin Name="Playing" Type="PinBoolValue" Value="True" />
+								<Pin Name="Playing" Type="PinBoolValue" Value="False" />
 								<Pin Name="StartTime" Type="PinDoubleValue" Value="0" />
 								<Pin Name="EndTime" Type="PinDoubleValue" Value="0" />
 								<Pin Name="Speed" Type="PinScalarValue" Value="1" />
@@ -14928,14 +14567,14 @@
 								<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 								<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToLeft" />
 								<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+								<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="LeftPixel" Type="PinScalarValue" Value="221" />
-								<Pin Name="TopPixel" Type="PinScalarValue" Value="54" />
+								<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopPixel" Type="PinScalarValue" Value="54" />
+								<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-								<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="TopNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 								<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 								<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 							</PinValues>
@@ -15217,14 +14856,14 @@
 								<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 								<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToLeft" />
 								<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+								<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="LeftPixel" Type="PinScalarValue" Value="96" />
-								<Pin Name="TopPixel" Type="PinScalarValue" Value="117" />
+								<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopPixel" Type="PinScalarValue" Value="117" />
+								<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-								<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="TopNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 								<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 								<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 							</PinValues>
@@ -15264,14 +14903,14 @@
 								<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 								<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToLeft" />
 								<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+								<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="LeftPixel" Type="PinScalarValue" Value="221" />
-								<Pin Name="TopPixel" Type="PinScalarValue" Value="117" />
+								<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopPixel" Type="PinScalarValue" Value="117" />
+								<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-								<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="TopNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 								<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 								<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 							</PinValues>
@@ -15428,14 +15067,14 @@
 								<Pin Name="KeepInSize" Type="PinBoolValue" Value="True" />
 								<Pin Name="HorizAlign" Type="PinIntValue" Value="phaEdgeToLeft" />
 								<Pin Name="VertAlign" Type="PinIntValue" Value="pvaEdgeToTop" />
+								<Pin Name="LeftOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="LeftPixel" Type="PinScalarValue" Value="318" />
-								<Pin Name="TopPixel" Type="PinScalarValue" Value="117" />
+								<Pin Name="RightOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="RightPixel" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopOffset" Type="PinScalarValue" Value="0" />
+								<Pin Name="TopPixel" Type="PinScalarValue" Value="117" />
+								<Pin Name="BottomOffset" Type="PinScalarValue" Value="0" />
 								<Pin Name="BottomPixel" Type="PinScalarValue" Value="0" />
-								<Pin Name="LeftNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="TopNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="RightNorm" Type="PinScalarValue" Value="0" />
-								<Pin Name="BottomNorm" Type="PinScalarValue" Value="0" />
 								<Pin Name="HScale" Type="PinScalarValue" Value="1" />
 								<Pin Name="VScale" Type="PinScalarValue" Value="1" />
 							</PinValues>
@@ -15882,6 +15521,7 @@
 						<Pin Name="AudioChannels" Type="PinIntValue" Value="aclStereo" />
 						<Pin Name="AudioKbps" Type="PinIntValue" Value="vrabr256" />
 						<Pin Name="UseMasterTC" Type="PinBoolValue" Value="False" />
+						<Pin Name="Timecode" Type="PinIntValue" Value="0" />
 					</PinValues>
 				</Module>
 				<Module Type="SetCollectionText">
@@ -16148,15 +15788,9 @@
 				<Connection FromModule="And 8" FromPin="Out" ToModule="Delay 2" ToPin="In" />
 				<Connection FromModule="And 3" FromPin="Out" ToModule="Not 3" ToPin="In" />
 				<Connection FromModule="And 9" FromPin="Out" ToModule="Delay 3" ToPin="In" />
-				<Connection FromModule="Dash File 2" FromPin="Out" ToModule="Text Not Equal 2" ToPin="A" />
-				<Connection FromModule="Dash File 3" FromPin="Out" ToModule="Text Not Equal 3" ToPin="A" />
-				<Connection FromModule="Dash File" FromPin="Out" ToModule="Text Not Equal" ToPin="A" />
 				<Connection FromModule="And" FromPin="Out" ToModule="Set Text Pin 4" ToPin="Set" />
 				<Connection FromModule="And 2" FromPin="Out" ToModule="Set Text Pin 5" ToPin="Set" />
 				<Connection FromModule="And 3" FromPin="Out" ToModule="Set Text Pin 6" ToPin="Set" />
-				<Connection FromModule="PLAYBACK" FromPin="Input 1" ToModule="Dash File" ToPin="File" />
-				<Connection FromModule="PLAYBACK" FromPin="Input 2" ToModule="Dash File 2" ToPin="File" />
-				<Connection FromModule="PLAYBACK" FromPin="Input 3" ToModule="Dash File 3" ToPin="File" />
 				<Connection FromModule="Copy Integer" FromPin="Out" ToModule="REC indicator" ToPin="Mode 1" />
 				<Connection FromModule="Copy Integer 2" FromPin="Out" ToModule="REC indicator" ToPin="Mode 2" />
 				<Connection FromModule="Copy Integer 3" FromPin="Out" ToModule="REC indicator" ToPin="Mode 3" />
@@ -16184,15 +15818,12 @@
 				<Connection FromModule="Set Collection Logical" FromPin="Out" ToModule="Set Collection Text 3" ToPin="Collection" />
 				<Connection FromModule="Copy Text 4" FromPin="Out" ToModule="Set Collection Text 3" ToPin="Value" />
 				<Connection FromModule="Set Collection Text 3" FromPin="Out" ToModule="Set Collection Text 4" ToPin="Collection" />
-				<Connection FromModule="Dash File" FromPin="Out" ToModule="Set Collection Text 4" ToPin="Value" />
 				<Connection FromModule="Set Collection Logical" FromPin="Out" ToModule="Set Collection Text 5" ToPin="Collection" />
 				<Connection FromModule="Copy Text 5" FromPin="Out" ToModule="Set Collection Text 5" ToPin="Value" />
 				<Connection FromModule="Set Collection Text 5" FromPin="Out" ToModule="Set Collection Text 6" ToPin="Collection" />
-				<Connection FromModule="Dash File 2" FromPin="Out" ToModule="Set Collection Text 6" ToPin="Value" />
 				<Connection FromModule="Set Collection Logical" FromPin="Out" ToModule="Set Collection Text 7" ToPin="Collection" />
 				<Connection FromModule="Copy Text 6" FromPin="Out" ToModule="Set Collection Text 7" ToPin="Value" />
 				<Connection FromModule="Set Collection Text 7" FromPin="Out" ToModule="Set Collection Text 8" ToPin="Collection" />
-				<Connection FromModule="Dash File 3" FromPin="Out" ToModule="Set Collection Text 8" ToPin="Value" />
 				<Connection FromModule="Copy Text 3" FromPin="Out" ToModule="Video Recorder" ToPin="OutputFolder" />
 				<Connection FromModule="Copy Integer 4" FromPin="Out" ToModule="Video Recorder" ToPin="VideoFormat" />
 				<Connection FromModule="Copy Scalar" FromPin="Out" ToModule="Video Recorder" ToPin="VideoMbps" />
@@ -16230,174 +15861,6 @@
 				<Connection FromModule="RECORD" FromPin="Tracking Only" ToModule="Set Collection Logical 2" ToPin="Value" />
 			</Connections>
 		</Module>
-		<Module Type="SwitchScalar">
-			<Properties Name="Switch Zoom 2" IsLocked="False">
-				<ExtraData>
-					<item key="Location" type="PointF" value="1394, -1673" />
-					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
-				</ExtraData>
-			</Properties>
-			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="0" />
-				<Pin Name="Value1" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value2" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value3" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value4" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value5" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value6" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value7" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value8" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value9" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value10" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value11" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value12" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value13" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value14" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value15" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value16" Type="PinScalarValue" Value="0" />
-				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
-			</PinValues>
-		</Module>
-		<Module Type="SwitchScalar">
-			<Properties Name="Switch Aspect 2" IsLocked="False">
-				<ExtraData>
-					<item key="Location" type="PointF" value="1435, -1400" />
-					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
-				</ExtraData>
-			</Properties>
-			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="0" />
-				<Pin Name="Value1" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value2" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value3" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value4" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value5" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value6" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value7" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value8" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value9" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value10" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value11" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value12" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value13" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value14" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value15" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value16" Type="PinScalarValue" Value="0" />
-				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
-			</PinValues>
-		</Module>
-		<Module Type="SwitchScalar">
-			<Properties Name="Switch Focus 2" IsLocked="False">
-				<ExtraData>
-					<item key="Location" type="PointF" value="1439, -1272" />
-					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
-				</ExtraData>
-			</Properties>
-			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="0" />
-				<Pin Name="Value1" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value2" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value3" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value4" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value5" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value6" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value7" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value8" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value9" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value10" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value11" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value12" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value13" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value14" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value15" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value16" Type="PinScalarValue" Value="0" />
-				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
-			</PinValues>
-		</Module>
-		<Module Type="SwitchScalar">
-			<Properties Name="Switch Zoom" IsLocked="False">
-				<ExtraData>
-					<item key="Location" type="PointF" value="2229, -1697" />
-					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
-				</ExtraData>
-			</Properties>
-			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="2" />
-				<Pin Name="Value1" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value2" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value3" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value4" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value5" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value6" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value7" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value8" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value9" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value10" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value11" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value12" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value13" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value14" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value15" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value16" Type="PinScalarValue" Value="0" />
-				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
-			</PinValues>
-		</Module>
-		<Module Type="SwitchScalar">
-			<Properties Name="Switch Aspect" IsLocked="False">
-				<ExtraData>
-					<item key="Location" type="PointF" value="2246, -1410" />
-					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
-				</ExtraData>
-			</Properties>
-			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="2" />
-				<Pin Name="Value1" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value2" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value3" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value4" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value5" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value6" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value7" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value8" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value9" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value10" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value11" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value12" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value13" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value14" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value15" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value16" Type="PinScalarValue" Value="0" />
-				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
-			</PinValues>
-		</Module>
-		<Module Type="SwitchScalar">
-			<Properties Name="Switch Focus" IsLocked="False">
-				<ExtraData>
-					<item key="Location" type="PointF" value="2243, -1287" />
-					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
-				</ExtraData>
-			</Properties>
-			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="2" />
-				<Pin Name="Value1" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value2" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value3" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value4" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value5" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value6" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value7" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value8" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value9" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value10" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value11" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value12" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value13" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value14" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value15" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value16" Type="PinScalarValue" Value="0" />
-				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
-			</PinValues>
-		</Module>
 		<Module Type="SetCollectionTransformation">
 			<Properties Name="Set Collection Transformation 3" IsLocked="False">
 				<ExtraData>
@@ -16434,62 +15897,6 @@
 				<Pin Name="Value" Type="PinVectorValue" Value="" />
 			</PinValues>
 		</Module>
-		<Module Type="SwitchScalar">
-			<Properties Name="Switch Zoom Orig 2" IsLocked="False">
-				<ExtraData>
-					<item key="Location" type="PointF" value="1401, -1544" />
-					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
-				</ExtraData>
-			</Properties>
-			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="0" />
-				<Pin Name="Value1" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value2" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value3" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value4" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value5" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value6" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value7" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value8" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value9" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value10" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value11" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value12" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value13" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value14" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value15" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value16" Type="PinScalarValue" Value="0" />
-				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
-			</PinValues>
-		</Module>
-		<Module Type="SwitchScalar">
-			<Properties Name="Switch Zoom Orig" IsLocked="False">
-				<ExtraData>
-					<item key="Location" type="PointF" value="2224, -1575" />
-					<item key="DisplayMode" type="FlowNodeDisplayMode" value="ConnectedPins" />
-				</ExtraData>
-			</Properties>
-			<PinValues>
-				<Pin Name="Selected" Type="PinIntValue" Value="2" />
-				<Pin Name="Value1" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value2" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value3" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value4" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value5" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value6" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value7" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value8" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value9" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value10" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value11" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value12" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value13" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value14" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value15" Type="PinScalarValue" Value="0" />
-				<Pin Name="Value16" Type="PinScalarValue" Value="0" />
-				<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
-			</PinValues>
-		</Module>
 		<Module Type="SetCollectionScalar">
 			<Properties Name="Set Collection Scalar 10" IsLocked="False">
 				<ExtraData>
@@ -16505,7 +15912,7 @@
 		<Module Type="TransformationConcat">
 			<Properties Name="Transformation Concat" IsLocked="False">
 				<ExtraData>
-					<item key="Location" type="PointF" value="-927, 293" />
+					<item key="Location" type="PointF" value="-797, 277" />
 				</ExtraData>
 			</Properties>
 			<PinValues>
@@ -16530,7 +15937,7 @@
 		<Pin Name="Playback Seq 1" Type="PinSequenceTrackReferenceValue" SourceModule="INPUT %N=1" SourcePin="Sequencer" />
 		<Pin Name="Playback Seq 2" Type="PinSequenceTrackReferenceValue" SourceModule="INPUT %N=2" SourcePin="Sequencer" />
 		<Pin Name="Playback Seq 3" Type="PinSequenceTrackReferenceValue" SourceModule="INPUT %N=3" SourcePin="Sequencer" />
-		<Pin Name="Transformation" Type="PinTransformationValue" SourceModule="Transformation Concat" SourcePin="Transformation" />
+		<Pin Name="Transformation" Type="PinTransformationValue" SourceModule="Transformation Concat" SourcePin="After" />
 	</ExposerInputPins>
 	<ExposerOutputPins>
 		<Pin Name="Preview" Type="PinVideoValue" SourceModule="REC CONTROL" SourcePin="Preview" />
@@ -16628,9 +16035,6 @@
 		<Connection FromModule="Set Collection Transformation 2" FromPin="Out" ToModule="Set Collection Scalar" ToPin="Collection" />
 		<Connection FromModule="FOV Calculator" FromPin="HorizontalFOV" ToModule="Set Collection Scalar" ToPin="Value" />
 		<Connection FromModule="Set Collection Scalar" FromPin="Out" ToModule="Set Collection Scalar 3" ToPin="Collection" />
-		<Connection FromModule="Switch Focus" FromPin="Out" ToModule="Set Collection Scalar 3" ToPin="Value" />
-		<Connection FromModule="Switch Zoom" FromPin="Out" ToModule="FOV Calculator" ToPin="Param" />
-		<Connection FromModule="Switch Aspect" FromPin="Out" ToModule="FOV Calculator" ToPin="Aspect" />
 		<Connection FromModule="CAMERA MODE" FromPin="Free Cam Focus" ToModule="Copy Scalar" ToPin="In" />
 		<Connection FromModule="If 1" FromPin="Out" ToModule="Switch Out Size" ToPin="Selected" />
 		<Connection FromModule="Switch Out Size 2" FromPin="Out" ToModule="Switch Out Size" ToPin="Value2" />
@@ -16646,8 +16050,6 @@
 		<Connection FromModule="SCENE" FromPin="Sharpen" ToModule="Combine" ToPin="Sharpen" />
 		<Connection FromModule="Scene Node 1" FromPin="Children" ToModule="Camera 1" ToPin="Parent" />
 		<Connection FromModule="Switch Transformation" FromPin="Out" ToModule="Camera 1" ToPin="Transformation" />
-		<Connection FromModule="Switch Zoom" FromPin="Out" ToModule="Camera 1" ToPin="ZoomFactor" />
-		<Connection FromModule="Switch Aspect" FromPin="Out" ToModule="Camera 1" ToPin="Aspect" />
 		<Connection FromModule="Switch Out Size" FromPin="Out" ToModule="Camera 1" ToPin="OutSize" />
 		<Connection FromModule="System Params 1" FromPin="Engine" ToModule="CurEngine" ToPin="A" />
 		<Connection FromModule="CurEngine" FromPin="Out" ToModule="LocalEngine" ToPin="A" />
@@ -16677,7 +16079,6 @@
 		<Connection FromModule="ON SCREEN" FromPin="Info Font Size" ToModule="TrkCam_Param_Info" ToPin="Font Size" />
 		<Connection FromModule="SELECTED CAMERA" FromPin="Out" ToModule="TrkCam_Param_Info" ToPin="Active Camera" />
 		<Connection FromModule="FREE" FromPin="Out" ToModule="TrkCam_Param_Info" ToPin="Free Mode" />
-		<Connection FromModule="Switch Zoom" FromPin="Out" ToModule="TrkCam_Param_Info" ToPin="Zoom Factor" />
 		<Connection FromModule="ON SCREEN" FromPin="#SDI" ToModule="TrkCam_Param_Info" ToPin="Sync" />
 		<Connection FromModule="STREAMING" FromPin="#On" ToModule="TrkCam_Param_Info" ToPin="Streaming" />
 		<Connection FromModule="Full Screen  Mode Switcher" FromPin="Out" ToModule="Matrix Label 2" ToPin="Program" />
@@ -16697,8 +16098,6 @@
 		<Connection FromModule="VCamU_CameraCut" FromPin="Out" ToModule="Set Collection Logical 3" ToPin="Value" />
 		<Connection FromModule="SELECTED CAMERA" FromPin="Out" ToModule="VCamU_CameraCut" ToPin="Camera" />
 		<Connection FromModule="Switch Transformation" FromPin="Out" ToModule="VCamU_CameraCut" ToPin="Cam Transform" />
-		<Connection FromModule="Switch Zoom" FromPin="Out" ToModule="VCamU_CameraCut" ToPin="Zoom Factor" />
-		<Connection FromModule="Switch Focus" FromPin="Out" ToModule="VCamU_CameraCut" ToPin="Focus Distance" />
 		<Connection FromModule="SCENE" FromPin="Base Cam Transf" ToModule="INPUT %N=3" ToPin="Base Cam Transf" />
 		<Connection FromModule="Scene Node 1" FromPin="Children" ToModule="INPUT %N=3" ToPin="Parent" />
 		<Connection FromModule="Guard Band" FromPin="Out" ToModule="INPUT %N=3" ToPin="Guard Band" />
@@ -16714,41 +16113,11 @@
 		<Connection FromModule="INPUT %N=1" FromPin="Rec Path" ToModule="REC CONTROL" ToPin="Rec Path 1" />
 		<Connection FromModule="INPUT %N=2" FromPin="Rec Path" ToModule="REC CONTROL" ToPin="Rec Path 2" />
 		<Connection FromModule="INPUT %N=3" FromPin="Rec Path" ToModule="REC CONTROL" ToPin="Rec Path 3" />
-		<Connection FromModule="SELECTED CAMERA" FromPin="Out" ToModule="Switch Zoom 2" ToPin="Selected" />
-		<Connection FromModule="INPUT %N=1" FromPin="Zoom Factor" ToModule="Switch Zoom 2" ToPin="Value1" />
-		<Connection FromModule="INPUT %N=2" FromPin="Zoom Factor" ToModule="Switch Zoom 2" ToPin="Value2" />
-		<Connection FromModule="INPUT %N=3" FromPin="Zoom Factor" ToModule="Switch Zoom 2" ToPin="Value3" />
-		<Connection FromModule="SELECTED CAMERA" FromPin="Out" ToModule="Switch Aspect 2" ToPin="Selected" />
-		<Connection FromModule="INPUT %N=1" FromPin="Aspect" ToModule="Switch Aspect 2" ToPin="Value1" />
-		<Connection FromModule="INPUT %N=2" FromPin="Aspect" ToModule="Switch Aspect 2" ToPin="Value2" />
-		<Connection FromModule="INPUT %N=3" FromPin="Aspect" ToModule="Switch Aspect 2" ToPin="Value3" />
-		<Connection FromModule="SELECTED CAMERA" FromPin="Out" ToModule="Switch Focus 2" ToPin="Selected" />
-		<Connection FromModule="INPUT %N=1" FromPin="Focus" ToModule="Switch Focus 2" ToPin="Value1" />
-		<Connection FromModule="INPUT %N=2" FromPin="Focus" ToModule="Switch Focus 2" ToPin="Value2" />
-		<Connection FromModule="INPUT %N=3" FromPin="Focus" ToModule="Switch Focus 2" ToPin="Value3" />
-		<Connection FromModule="If 1" FromPin="Out" ToModule="Switch Zoom" ToPin="Selected" />
-		<Connection FromModule="FREE CAMERA" FromPin="ZoomFactor" ToModule="Switch Zoom" ToPin="Value1" />
-		<Connection FromModule="Switch Zoom 2" FromPin="Out" ToModule="Switch Zoom" ToPin="Value2" />
-		<Connection FromModule="If 1" FromPin="Out" ToModule="Switch Aspect" ToPin="Selected" />
-		<Connection FromModule="System Params" FromPin="FrameAspect" ToModule="Switch Aspect" ToPin="Value1" />
-		<Connection FromModule="Switch Aspect 2" FromPin="Out" ToModule="Switch Aspect" ToPin="Value2" />
-		<Connection FromModule="If 1" FromPin="Out" ToModule="Switch Focus" ToPin="Selected" />
-		<Connection FromModule="Copy Scalar" FromPin="Out" ToModule="Switch Focus" ToPin="Value1" />
-		<Connection FromModule="Switch Focus 2" FromPin="Out" ToModule="Switch Focus" ToPin="Value2" />
 		<Connection FromModule="Switch Transformation" FromPin="Out" ToModule="Set Collection Transformation 3" ToPin="Value" />
 		<Connection FromModule="Set Collection Transformation 3" FromPin="Out" ToModule="Set Collection Scalar 9" ToPin="Collection" />
-		<Connection FromModule="Switch Zoom Orig" FromPin="Out" ToModule="Set Collection Scalar 9" ToPin="Value" />
 		<Connection FromModule="Set Collection Scalar 10" FromPin="Out" ToModule="Set Collection Vector" ToPin="Collection" />
 		<Connection FromModule="Switch 4" FromPin="Out" ToModule="Set Collection Vector" ToPin="Value" />
-		<Connection FromModule="SELECTED CAMERA" FromPin="Out" ToModule="Switch Zoom Orig 2" ToPin="Selected" />
-		<Connection FromModule="INPUT %N=1" FromPin="Zoom Factor Orig" ToModule="Switch Zoom Orig 2" ToPin="Value1" />
-		<Connection FromModule="INPUT %N=2" FromPin="Zoom Factor Orig" ToModule="Switch Zoom Orig 2" ToPin="Value2" />
-		<Connection FromModule="INPUT %N=3" FromPin="Zoom Factor Orig" ToModule="Switch Zoom Orig 2" ToPin="Value3" />
-		<Connection FromModule="If 1" FromPin="Out" ToModule="Switch Zoom Orig" ToPin="Selected" />
-		<Connection FromModule="FREE CAMERA" FromPin="ZoomFactor" ToModule="Switch Zoom Orig" ToPin="Value1" />
-		<Connection FromModule="Switch Zoom Orig 2" FromPin="Out" ToModule="Switch Zoom Orig" ToPin="Value2" />
 		<Connection FromModule="Set Collection Scalar 9" FromPin="Out" ToModule="Set Collection Scalar 10" ToPin="Collection" />
-		<Connection FromModule="Switch Focus" FromPin="Out" ToModule="Set Collection Scalar 10" ToPin="Value" />
-		<Connection FromModule="SCENE" FromPin="Base Cam Transf" ToModule="Transformation Concat" ToPin="After" />
+		<Connection FromModule="SCENE" FromPin="Base Cam Transf" ToModule="Transformation Concat" ToPin="Transformation" />
 	</Connections>
 </AximmetryCompound>
