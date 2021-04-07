@@ -44,4 +44,36 @@ For full product contact Rassi Engineering +9613341934 or marwan@rassi.me)
 
 1- Download Calibration pattern (camera-calibration-checker-board_9x7.pdf)  print it and tape it to a board
 
-please note the following
+2- Follow the Lens Calibration explanation [here](https://github.com/mrassi/REtrackerDEMO/blob/main/Lens%20Calibration%20Tools/Lens%20calibration%20explanation.pdf)
+
+# Brief description
+
+The T265 is an Intel RealSense high precision  tracking sensor. 
+We used it to create our own REtracker software. The software is renderer agnostic, meaning it works with all engines. 
+You don’t need any markers at the set and you can use it outdoors and indoors. You need to purchase the sensor yourself from Intel website (check readme file)
+
+When we started this project our goals were:
+- initial deployment time of less than 10 minutes
+- Daily use setup should take less than 2 minutes
+- Robust enough for live broadcast
+- Ability for use with most engines
+- Very easy workflow
+
+you can track 3 cameras simultaneously with the same Aximmetry license on a single PC
+
+The sensor connects to the PC or to a laptop. You can use yany broadcast camera. It is mounted on top of it.
+The REtracker software can be installed on any mini pc (i3, 4 GB ram) and the software will send tracking data via Wifi. Or you can connect it directly to the renderer PC.
+
+A set of precision calibration tools is offered in the package as well. 
+
+Sample workflow video: [check video here](https://youtu.be/-iM_Fvp7t80)
+
+Further stuff at my [Youtube page](https://www.youtube.com/user/adorablemarwan)
+
+As for Unreal it works with the native unreal OSC plugin. 
+A Livelink Version for Unreal is in the making, it is still in beta, we will release it soon enough.
+
+
+The pre-launch price is 2000$/studio.  Meaning you can use the same license for up to 6 cameras (u need one sensor per camera, sensor costs 199$)
+We also provide one on one remote support and training. This offer is only available for select customers as we are limiting it to few licenses per region.
+Some exceptions are made for Indie companies and the ones whose input help our progress, we sell them single licenses with options to upgrade at a reduced cost.
