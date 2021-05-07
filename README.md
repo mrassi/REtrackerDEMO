@@ -11,7 +11,7 @@ For full product contact Rassi Engineering +9613341934 or marwan@rassi.me)
 
 3- clone or download Github directory
 
-4- download tracker software `REtrackerDemo.exe` from [our google drive](https://www.dropbox.com/s/5f7olf3klzic3jp/REtrackerDemo.exe?dl=0)
+4- download tracker software `REtrackerDemo.exe` from [Dropbox](https://www.dropbox.com/s/5f7olf3klzic3jp/REtrackerDemo.exe?dl=0)
 
 5- run `RE_sensordetect.exe` (this will read your unique T265 serial number and will store it under `serial.txt`)
 
