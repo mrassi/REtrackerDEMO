@@ -46,6 +46,8 @@ For full product contact Rassi Engineering +9613341934 or marwan@rassi.me)
 
 2- Follow the Lens Calibration explanation [here](https://github.com/mrassi/REtrackerDEMO/blob/main/Lens%20Calibration%20Tools/Lens%20calibration%20explanation.pdf)
 
+3- An in depth video tutorial by Greg Corson [youtube](https://youtu.be/XxcRbu-084M)
+
 # Brief description
 
 The T265 is an Intel RealSense high precision  tracking sensor. 
