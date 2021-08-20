@@ -5,7 +5,7 @@ RealSense Tracker by RASSI ENGINEERING
 (Demo version: only supports Roll Pitch Yaw) 
 For full product contact Rassi Engineering +9613341934 or marwan@rassi.me)
 
-1- You will need a [Realesense T265 that you can purchase here](https://store.intelrealsense.com/buy-intel-realsense-tracking-camera-t265.html)
+1- You will need a [Realesense T265 that you can purchase here](https://store.intelrealsense.com/buy-intel-realsense-depth-and-tracking-bundle.html)
 
 2- Download and install [latest sdk from realsense](https://github.com/IntelRealSense/librealsense/releases/download/v2.42.0/Intel.RealSense.SDK-WIN10-2.42.0.2845.exe)
 
