@@ -97,3 +97,5 @@ A Livelink Version for Unreal is in the making, it is still in beta, we will rel
 The price is 2000$/studio.  Meaning you can use the same license for up to 3 cameras (you need one sensor per camera, sensor costs 199$)
 We also provide one on one remote support and training. We only sell 10 licenses per month in order to provide complete support to our clients.
 NB: Some exceptions are made for Indie companies and the ones whose input help our progress, we sell them single licenses with options to upgrade at a reduced cost.
+
+# Intel's support of the sensor does not affect REtracker as it is bullet proof already. Hurry up and purchase your sensors whereever you can find them as the market is fast moving. T265 will be kep in production till february 2022. 
