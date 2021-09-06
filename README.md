@@ -78,13 +78,21 @@ A Livelink Version for Unreal is in the making, it is still in beta, we will rel
 
 # Full version features:
 1- full studio tracking (3 Sensors, 3 cameras) 
+
 2- Lens calibration software that generates the FOV and lens distortion parameters
+
 3- Genlock (our bespoke system locks the tracking to the output signal for a silky smooth blend of the graphics and the camera feed)
+
 4- World pose software to detect camera height and position in real world
+
 5- Aximmetry tools for AR, VR and XR
+
 6- Livelink version for native unreal support
+
 7- One on one tutorial on zoom and teamviewer
+
 8- Lifetime license.
+
 
 The price is 2000$/studio.  Meaning you can use the same license for up to 3 cameras (you need one sensor per camera, sensor costs 199$)
 We also provide one on one remote support and training. We only sell 10 licenses per month in order to provide complete support to our clients.
