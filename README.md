@@ -5,7 +5,7 @@ REtracker: RealSense Tracker by RASSI ENGINEERING
 (Demo version: only supports Roll Pitch Yaw) 
 For full product contact Rassi Engineering +9613341934 or marwan@rassi.me)
 
-1- You will need a [Realesense T265 that you can purchase here](https://store.intelrealsense.com/buy-intel-realsense-depth-and-tracking-bundle.html)
+1- You will need a [Realesense T265 that you can purchase here](https://store.intelrealsense.com/buy-intel-realsense-depth-and-tracking-bundle.html) or [here for immediate delivery](https://www.mouser.com/ProductDetail/Intel/82637BRPLHV?qs=%2Fha2pyFaduhEp3gev6pA0Xg1CVoIUBRRXQMIfH4%2Fhzuzur4Odm7o0Q%3D%3D)
 
 2- Download and install [latest sdk from realsense](https://github.com/IntelRealSense/librealsense/releases/download/v2.42.0/Intel.RealSense.SDK-WIN10-2.42.0.2845.exe)
 
